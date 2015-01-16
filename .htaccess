@@ -4,6 +4,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 
-RewriteCond %{HTTP_HOST} ^collegedrifters.loc$
-RewriteRule ^/?$ "http\:\/\/www\.collegedrifters\.loc\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^collegedrifters.com$
+RewriteRule ^/?$ "http\:\/\/www\.collegedrifters\.com\/" [R=301,L]
 
