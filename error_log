@@ -1,0 +1,32 @@
+[01-Jun-2014 02:59:45 America/Chicago] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home2/colleged/public_html/Twitt/connect.php on line 11
+[01-Jun-2014 02:59:45 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/opt/php54/lib/php') in /home2/colleged/public_html/Twitt/connect.php on line 11
+[01-Jun-2014 03:26:28 America/Chicago] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home2/colleged/public_html/Twitt/callback.php on line 11
+[01-Jun-2014 03:26:28 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/opt/php54/lib/php') in /home2/colleged/public_html/Twitt/callback.php on line 11
+[04-Jun-2014 09:50:13 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 9
+[04-Jun-2014 09:50:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 15
+[04-Jun-2014 09:50:44 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 9
+[04-Jun-2014 09:53:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 15
+[04-Jun-2014 09:56:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 15
+[04-Jun-2014 09:59:59 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 9
+[04-Jun-2014 10:02:24 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/colleged/public_html/Twitt/index.php:2) in /home2/colleged/public_html/Twitt/index.php on line 9
+[04-Jun-2014 11:21:32 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/colleged/public_html/index.php:2) in /home2/colleged/public_html/index.php on line 9
+[04-Jun-2014 13:01:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:18) in /home2/colleged/public_html/index.php on line 14
+[04-Jun-2014 18:33:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:7) in /home2/colleged/public_html/index.php on line 14
+[04-Jun-2014 18:34:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:7) in /home2/colleged/public_html/index.php on line 14
+[04-Jun-2014 18:35:23 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:16) in /home2/colleged/public_html/index.php on line 14
+[04-Jun-2014 18:35:55 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:16) in /home2/colleged/public_html/index.php on line 14
+[04-Jun-2014 18:36:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:16) in /home2/colleged/public_html/index.php on line 14
+[04-Jun-2014 20:11:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:16) in /home2/colleged/public_html/index.php on line 14
+[05-Jun-2014 09:53:39 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/colleged/public_html/coneks.php:16) in /home2/colleged/public_html/index.php on line 14
+[05-Jun-2014 10:02:02 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home2/colleged/public_html/coneks.php on line 15
+[06-Jun-2014 17:06:17 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home2/colleged/public_html/loginout.php on line 2
+[06-Jun-2014 17:08:15 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home2/colleged/public_html/loginout.php on line 2
+[06-Jun-2014 17:15:24 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home2/colleged/public_html/loginout.php on line 2
+[06-Jun-2014 17:21:24 America/Chicago] PHP Warning:  file_get_contents(https://graph.facebook.com/me): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home2/colleged/public_html/facebookcallback.php on line 30
+[06-Jun-2014 17:22:19 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home2/colleged/public_html/loginout.php on line 2
+[10-Jul-2014 21:15:52 America/Chicago] PHP Warning:  require_once(config-sample.php): failed to open stream: No such file or directory in /home2/colleged/public_html/test.php on line 10
+[10-Jul-2014 21:15:52 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'config-sample.php' (include_path='.:/opt/php54/lib/php') in /home2/colleged/public_html/test.php on line 10
+[15-Jul-2014 07:28:52 America/Chicago] PHP Fatal error:  Call to a member function getItemList() on a non-object in /home2/colleged/public_html/application/controllers/marketplace.php on line 29
+[17-Jul-2014 09:10:49 America/Chicago] PHP Fatal error:  Call to undefined method CI_Email::mailtype() in /home2/colleged/public_html/application/models/user.php on line 182
+[27-Jul-2014 01:31:52 America/Chicago] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in /home2/colleged/public_html/application/models/user.php on line 243
