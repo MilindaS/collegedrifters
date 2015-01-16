@@ -1,0 +1,12 @@
+application/config
+BackUp
+system
+user_guide
+.git
+colleged_db.sql
+error_log
+index.php
+license.txt
+.htaccess
+.gitignore
+
