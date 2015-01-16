@@ -40,7 +40,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<h3 id="tagText" class="text-center">Buy, sell and exchange items with other college students</h3>
+			<h3 id="tagText" class="text-center">Buy, sell, and exchange items with other college students</h3>
 		</div>
 	</div>
 	<div class="row">
