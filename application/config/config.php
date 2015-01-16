@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://collegedrifters.com/';
+$config['base_url']	= 'http://collegedrifters.loc/';
 
 /*
 |--------------------------------------------------------------------------
