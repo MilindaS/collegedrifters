@@ -17,14 +17,14 @@
 					<div class="collapse navbar-collapse" id="searchContetn" >
 					  	<form class="navbar-form navbar-left" role="search" method="POST" action="<?php echo BASEURL;?>marketplace/search">
 						  <div class="form-group">
-							<input type="text" class="form-control" name="city" placeholder="City" style="width:100%;" >
-							<input type="text" class="form-control" name="state" placeholder="State"   style="width:100%;">
-							<input type="text" class="form-control" name="minPrice" placeholder="$ Min">
-							<input type="text" class="form-control" name="maxPrice" placeholder="$ Max">
+							<input type="text" class="form-control" name="city" placeholder="City"   style="max-width:100px;width:100%;" value="<?php if(isset($_POST['city'])){echo $_POST['city'];}?>">
+							<input type="text" class="form-control" name="state" placeholder="State"  value="<?php if(isset($_POST['state'])){echo $_POST['state'];}?>" style="max-width:100px;width:100%;">
+							<input type="text" class="form-control" name="minPrice" placeholder="$ Min" value="<?php if(isset($_POST['minPrice'])){echo $_POST['minPrice'];}?>">
+							<input type="text" class="form-control" name="maxPrice" placeholder="$ Max" value="<?php if(isset($_POST['maxPrice'])){echo $_POST['maxPrice'];}?>">
 								<select class="form-control" name="category" >
 													<option value="">Select a Category</option>
 													<?php foreach($this->category_array as $category){?>
-													<option value="<?php echo $category['category_id']?>"><?php echo $category['category_name']?></option>
+													<option value="<?php echo $category['category_id'];?>" <?php if(isset($_POST['category']) AND ($_POST['category']==$category['category_id']) ){echo 'selected';}?>><?php echo $category['category_name']?></option>
 													<?php }?>
 								</select>
 						  </div>
@@ -40,6 +40,7 @@
 
 </div>
 </div>
+
 <div class="content">
 	<div class="container">
 		<div class="row">
@@ -51,7 +52,7 @@
 					<div class="panel panel-default">
 					  <div class="panel-body">
 						<div class="row">
-							<?php if($item['item_image']!=null){?>
+						<?php if($item['item_image']!=null){?>
 							<div class="col-md-3">
 								<img src="<?php if($item['item_image']!=null){echo BASEURL.$item['item_image'];}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
 							</div>
@@ -71,7 +72,7 @@
 									</div>
 								</div>
 
-								<p class="postedAdContent" style="min-height:50px;"><?php echo substr($item['item_description'],0,300);?>&nbsp;&nbsp;<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" class="btn btn-warning btn-xs">Read More</a></p>
+								<p class="postedAdContent" style="min-height:50px;"><?php echo substr($item['item_description'],0,300);?>..</p>
 
 								<div class="row">
 									<div class="col-md-12">
@@ -100,19 +101,27 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-md-12">
-		<ul class="pagination pull-right">
-			<?php for($i=1;$i<=$this->total_items;$i++){?>
-				<li <?php if($this->page==$i){ echo 'class="active"';}?>><a href="<?php echo BASEURL;?>marketplace/listView/<?php echo $i?>" ><?php echo $i?></a></li>
-		<?php }?>
-		</ul>
-	</div>
-</div>
-
 
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script type="text/javascript">
 
