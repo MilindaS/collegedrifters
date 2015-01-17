@@ -53,7 +53,14 @@
 			<?php if($this->errorLogin!=null){?>
 			<div class="alert alert-danger" role="alert">Email and Password are Incorrect !</div>
 			<?php } ?>
+			<div class="form-group">
 			<button type="submit" class="btn btn-primary btn-block" name="signup" ><strong>Login</strong></button>
+			</div>
+			<div class="form-group">
+				<b style="font-size:12px;margin-left:50px;">
+				Don't have an account? <a href="<?php echo BASEURL;?>login/registerView">Sign up</a>
+				</b>
+			</div>
 		</form>
 	  </div>
 </div>
