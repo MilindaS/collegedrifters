@@ -711,3 +711,45 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 		font-weight: bold;
 	}
 }
+
+
+
+
+/*Admin Pages*/
+.admin-body{
+	margin-top:10px;
+}
+.admin-body table{
+	font-size: 14px;
+}
+.admin-body-page-name{
+	padding-bottom:10px;
+	font-size: 20px;
+	margin:10px 5px 20px 5px;
+	color:#555;
+	border-bottom: 1px solid #aaa;
+}
+.admin-body .edit{
+	padding:2px 15px;
+	background: #1B3148;
+	color:#DDD;
+	font-size: 13px;
+}
+.admin-body .view{
+	padding:2px 15px;
+	background: #08867A;
+	color:#FFF;
+	font-size: 13px;
+}
+.admin-body .delete{
+	padding:2px 15px;
+	background: #F14D4D;
+	color:#FFF;
+	font-size: 13px;
+}
+@media (min-width:992px) {
+	.admin-body table thead .action{
+		width:30%;
+	}
+
+}
