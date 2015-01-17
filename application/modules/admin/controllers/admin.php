@@ -7,11 +7,39 @@ class Admin extends MX_Controller {
 		$this->load->model('mdl_admin');
 		$this->load->module('home');
 	}
+
 	function dash(){
+		$data['page_name'] = 'Dashboard';
+		$this->generateAdminTempalte('dash',$data);
+	}
+	function pages(){
+		$data['page_name'] = 'Pages';
+		$this->generateAdminTempalte('pages',$data);
+	}
+	function users(){
+		$data['page_name'] = 'Users';
+		$this->generateAdminTempalte('users',$data);
+	}
+	function smlinks(){
+		$data['page_name'] = 'Social Media';
+		$this->generateAdminTempalte('smlinks',$data);
+	}
+	function generateAdminTempalte($page=null,$data=null){
 		$this->home->header();
-		$this->load->view('dash');
+		$this->load->view('admin-template-block-header',$data);
+		$this->load->view($page);
+		$this->load->view('admin-template-block-footer');
 		$this->home->footer();
 	}
+
+
+
+
+
+
+
+
+
 	function get($order_by){
 		$this->load->model('mdl_rename');
 		$query = $this->mdl_rename->get($order_by);
