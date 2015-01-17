@@ -1,7 +1,6 @@
 <?php
-if(!$this->session->userdata('logged_in')){
-	redirect(BASEURL.'login/loginView', 'refresh');
-}
+if(!$this->session->userdata('logged_in')){	redirect(BASEURL.'login/loginView', 'refresh');}
+
 $session_data = $this->session->userdata('logged_in');
 $exploded_url = explode('/',uri_string());
 ?>

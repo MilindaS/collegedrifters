@@ -5,6 +5,7 @@ class Login extends MX_Controller {
 	function __construct(){
 		parent::__construct();
 		session_start();
+		$this->load->module('home');
 	}
 	
 	public function loginView($errorLogin=null)
@@ -18,7 +19,6 @@ class Login extends MX_Controller {
 		$js_array = array('bootstrapValidator.min.js');
 		$this->errorLogin = $errorLogin;
 
-		$this->load->module('home');
 		$this->home->header($css_array,$js_array);
 		$this->load->view('login');
 		$this->home->footer();
@@ -31,11 +31,11 @@ class Login extends MX_Controller {
 
 	public function registerView()
 	{
-		$this->css_array = array('bootstrapValidator.css','datepicker.css');
-		$this->js_array = array('bootstrapValidator.min.js','bootstrap-datepicker.js');
-		$this->load->view('common/header');
-		$this->load->view('login/registerView');
-		$this->load->view('common/footer');
+		$css_array = array('bootstrapValidator.css','datepicker.css');
+		$js_array = array('bootstrapValidator.min.js','bootstrap-datepicker.js');
+		$this->home->header($css_array,$js_array);
+		$this->load->view('registerView');
+		$this->home->footer();
 	}
 
 	public function doRegister(){
@@ -43,11 +43,11 @@ class Login extends MX_Controller {
 	}
 
 	public function activationPending(){
-		$this->css_array = array('bootstrapValidator.css','datepicker.css');
-		$this->js_array = array('bootstrapValidator.min.js','bootstrap-datepicker.js');
-		$this->load->view('common/header');
-		$this->load->view('login/activationPending');
-		$this->load->view('common/footer');
+		$css_array = array('bootstrapValidator.css','datepicker.css');
+		$js_array = array('bootstrapValidator.min.js','bootstrap-datepicker.js');
+		$this->home->header($css_array,$js_array);
+		$this->load->view('activationPending');
+		$this->home->footer();
 	}
 
 	function logout()
@@ -61,9 +61,11 @@ class Login extends MX_Controller {
 		$this->user->activate($user_id,$user_notification);
 	}
 	public function alreadyMember(){
-		$this->load->view('common/header');
-		$this->load->view('login/alreadyMember');
-		$this->load->view('common/footer');
+		$css_array = array('bootstrapValidator.css','datepicker.css');
+		$js_array = array('bootstrapValidator.min.js','bootstrap-datepicker.js');
+		$this->home->header($css_array,$js_array);
+		$this->load->view('alreadyMember');
+		$this->home->footer();
 	}
 
 
