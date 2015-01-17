@@ -1,15 +1,23 @@
 <div class="container-fluid">
 
 		<div class="row">
-			<div class="col-md-2 admin-nav-stack-left hidden-xs hidden-sm">
+			<div class="col-md-2 col-sm-1 col-xs-2">
 				<div class="row stack-head-nav">
-					<div class="col-md-12">CollegeDrifters</div>
+					<div class="col-md-12">
+						<span class="hidden-xs hidden-sm">College <b>Drifters</b></span>
+						<span class="hidden-md hidden-lg"><span class="glyphicon glyphicon-th"></span></span>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-10 admin-nav-stack-right">
+			<div class="col-md-10 col-sm-11 col-xs-10">
 				<div class="row stack-head">
-					<div class="col-md-1"><a href=""><span class="glyphicon glyphicon-th"></span></a></div>
-					<div class="col-md-11">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ol class="breadcrumb">
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+							<li class="active">Data</li>
+						</ol>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-6">
 						<div class="pull-right">Admin |
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 								<span class="glyphicon glyphicon-cog"></span>
@@ -25,7 +33,7 @@
 
 
 		<div class="row">
-			<div class="col-md-2 admin-nav-stack-left col-sm-1 col-xs-2">
+			<div class="col-md-2 col-sm-1 col-xs-2">
 				<div class="row stack-body-nav">
 					<div class="row">
 						<div class="col-md-12">
@@ -46,7 +54,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-10 admin-nav-stack-right col-sm-11 col-xs-10">
+			<div class="col-md-10 col-sm-11 col-xs-10">
 				<div class="row stack-body">
 					<div class="col-md-12">body</div>
 				</div>

@@ -614,6 +614,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	color:#FFFFFF;
 	padding:10px;
 }
+
 .stack-body-nav{
 	background:#1B1E24;
 	color: #8B91A0;
@@ -650,6 +651,14 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	background:#FFFFFF;
 	color:#000000;
 	padding:10px;
+}
+.stack-head .col-md-4{
+	font-weight: bold;
+}
+.stack-head .col-md-4 .breadcrumb{
+	margin-bottom: 0px;
+	padding: 0px;
+	background-color:#FFFFFF;
 }
 .stack-head .pull-right .dropdown-toggle{
 	color:black;
@@ -689,5 +698,16 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 @media (max-width:992px) {
 	.stack-body-nav ul a .glyphicon{
 		font-size: 20px;
+	}
+	#stack-nav-head-log:{
+		display: hidden;
+	}
+	.stack-head-nav{
+	padding:15px;
+	}
+	.stack-head .col-md-4{
+		font-size: 16px;
+		margin-top: 2px;
+		font-weight: bold;
 	}
 }
