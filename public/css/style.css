@@ -747,9 +747,38 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	color:#FFF;
 	font-size: 13px;
 }
+
+.admin-dash-snippet{
+	float:left;
+	width:100%;
+	margin-top: 10px;
+	text-align:center;
+	color: #434A54;
+}
+#total-visitor-snippet-title{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+#total-visitor-to-date{
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	line-height: 15px;
+
+}
+#total-visitor-count{
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: arial;
+}
 @media (min-width:992px) {
 	.admin-body table thead .action{
 		width:30%;
 	}
 
 }
+

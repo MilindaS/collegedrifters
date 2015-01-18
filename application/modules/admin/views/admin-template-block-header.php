@@ -12,13 +12,13 @@
 			</div>
 			<div class="col-md-10 col-sm-11 col-xs-10">
 				<div class="row stack-head">
-					<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="col-md-4 col-sm-4 col-xs-7">
 						<ol class="breadcrumb">
 							<li><a href="<?php echo BASEURL;?>admin/dash"><span class="glyphicon glyphicon-home"></span></a></li>
 							<li class="active"><?php echo isset($page_name)? $page_name:'';?></li>
 						</ol>
 					</div>
-					<div class="col-md-8 col-sm-8 col-xs-6">
+					<div class="col-md-8 col-sm-8 col-xs-5">
 						<div class="pull-right">Admin |
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 								<span class="glyphicon glyphicon-cog"></span>

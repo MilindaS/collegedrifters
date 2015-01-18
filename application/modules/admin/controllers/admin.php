@@ -10,7 +10,9 @@ class Admin extends MX_Controller {
 
 	function dash(){
 		$data['page_name'] = 'Dashboard';
-		$this->generateAdminTempalte('dash',$data);
+		$css_array = array('odometer-theme-default.css');
+		$js_array = array('odometer.min.js');
+		$this->generateAdminTempalte('dash',$data,$css_array,$js_array);
 	}
 	function pages(){
 		$data['page_name'] = 'Pages';
@@ -24,8 +26,8 @@ class Admin extends MX_Controller {
 		$data['page_name'] = 'Social Media';
 		$this->generateAdminTempalte('smlinks',$data);
 	}
-	function generateAdminTempalte($page=null,$data=null){
-		$this->home->header();
+	function generateAdminTempalte($page=null,$data=null,$css=null,$js=null){
+		$this->home->header($css,$js);
 		$this->load->view('admin-template-block-header',$data);
 		$this->load->view($page);
 		$this->load->view('admin-template-block-footer');
