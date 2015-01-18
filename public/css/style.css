@@ -755,21 +755,23 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	text-align:center;
 	color: #434A54;
 }
-#total-visitor-snippet-title{
+
+
+#total-visitor-snippet-title,#total-item-snippet-title,#total-user-snippet-title{
 	font-size: 16px;
 	font-weight: 600;
 	margin-bottom: 5px;
 	line-height: 20px;
 	text-transform: uppercase;
 }
-#total-visitor-to-date{
+#total-visitor-to-date,#total-item-sub-title,#total-user-sub-title{
 	font-size: 12px;
 	font-weight: 400;
 	margin-bottom: 5px;
 	line-height: 15px;
 
 }
-#total-visitor-count{
+#total-visitor-count,#total-item-count,#total-user-count{
 	font-size: 32px;
 	line-height: 40px;
 	font-weight: bold;
@@ -782,3 +784,37 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 
 }
 
+#total-item-snippet-img .glyphicon,#total-user-snippet-img .glyphicon{
+	font-size: 60px;
+	margin:12px 0px;
+}
+#total-time-snippet-img .glyphicon{
+	font-size: 40px;
+	margin:3px 0px 12px 0px; 
+}
+#date-sinppet{
+	background: #1C9376;
+	padding:5px 0px;
+	border-radius: 4px;
+}
+#time-sinppet{
+	position: relative;
+	left:-35px;
+	top:3px;
+	font-size: 32px;
+	border-left:1px solid #cdcdcd;
+	line-height: 40px;
+	font-family: arial;
+	text-align: center;
+}
+#total-item-snippet-text,#total-user-snippet-text{
+	border-left:1px solid #DBDBDB;
+}
+#snippet-red{
+	background:#E9573F;
+	color: #FFF;
+}
+#snippet-green{
+	background:#36BA99;
+	color: #FFF;
+}
