@@ -1,5 +1,8 @@
 <?php
-//print_r($user_data);?>
+//echo $iteratinons;
+?>
+<div class="row">
+<div class="col-md-12">
 <div class="panel panel-default admin-body">
   <div class="panel-body">
   <div class="admin-body-page-name">Users</div>
@@ -32,4 +35,27 @@
 		</tbody>
     </table>
   </div>
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <nav class="pull-right admin-nav">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <?php for($i=1;$i<=$iteratinons;$i++){?>
+                <li <?php if($page==$i){ echo 'class="active"';}?>><a href="<?php echo BASEURL;?>admin/users/<?php echo $i?>" ><?php echo $i?></a></li>
+            <?php }?>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </div>
 </div>

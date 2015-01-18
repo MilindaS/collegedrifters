@@ -71,7 +71,7 @@
 		  <div class="panel-body">
 		  	<div class="row">
 		  		<div class="col-md-12">
-		  			
+
 		  		<div class="admin-customize-snippet-title">
 		  			Customize
 		  		</div>
@@ -112,6 +112,9 @@
 		</div>
 	</div>
 </div>
+</div>
+
+
 
 
 
@@ -129,8 +132,9 @@ setTimeout(function(){
   }, 500);
 
 $(document).ready(function(){
+
 	startTime();
-	
+
 
 	var mydate=new Date()
     var year=mydate.getYear()

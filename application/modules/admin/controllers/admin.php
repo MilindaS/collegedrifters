@@ -19,9 +19,16 @@ class Admin extends MX_Controller {
 		$data['page_name'] = 'Pages';
 		$this->generateAdminTempalte('pages',$data);
 	}
-	function users(){
+	function users($page=null){
 		$data['page_name'] = 'Users';
-		$data['user_data'] = $this->user->get('user_id')->result();
+		$per_page_user = 7;
+		$active_page = $page;
+		$page = ($page!=null) ? ($page-1) : 0;
+		$page = $page*$per_page_user;
+		$total_users = $this->user->count_all();
+		$data['iteratinons'] = ceil(($total_users/$per_page_user));
+		$data['user_data'] = $this->user->get_with_limit($per_page_user,$page,'user_id')->result();
+		$data['page'] = $active_page;
 		$this->generateAdminTempalte('users',$data);
 	}
 	function smlinks(){

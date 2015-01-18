@@ -105,7 +105,7 @@
 		<ul class="pagination pull-right">
 			<?php for($i=1;$i<=$this->total_items;$i++){?>
 				<li <?php if($this->page==$i){ echo 'class="active"';}?>><a href="<?php echo BASEURL;?>marketplace/listView/<?php echo $i?>" ><?php echo $i?></a></li>
-		<?php }?>
+			<?php }?>
 		</ul>
 	</div>
 </div>

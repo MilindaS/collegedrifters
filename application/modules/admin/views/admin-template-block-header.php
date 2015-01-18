@@ -1,4 +1,8 @@
-
+<script>
+	$(document).ready(function(){
+		$('.stack-body-nav').css({'height':$('.stack-body').height()})
+	});
+</script>
 <div class="container-fluid">
 
 		<div class="row">
@@ -33,8 +37,8 @@
 		</div>
 
 
-		<div class="row">
-			<div class="col-md-2 col-sm-1 col-xs-2">
+		<div class="row" >
+			<div class="col-md-2 col-sm-1 col-xs-2" >
 				<div class="row stack-body-nav">
 					<div class="row">
 						<div class="col-md-12">
@@ -57,4 +61,4 @@
 
 			<div class="col-md-10 col-sm-11 col-xs-10">
 				<div class="row stack-body">
-					<div class="col-md-12">
+					<div class="col-md-12 scrolly">

@@ -182,26 +182,7 @@ class Mdl_user extends CI_Model {
 			$result = $query->result();
 
 			$last_inserted_id = $result[0]->LSI;
-			/*
-			$sql = "SELECT * FROM tb_users WHERE user_id = ?";
-			$query = $this->db->query($sql, array($last_inserted_id));
-
-			$result = $query->result();
-
-			$sess_array = array();
-			foreach($result as $row)
-			{
-				$sess_array = array(
-					'id' => $row->user_id,
-					'username' => $row->user_firstName
-				);
-			   $this->session->set_userdata('logged_in', $sess_array);
-			}
-
-			$session_data = $this->session->userdata('logged_in');
-			*/
-			/*This goes with thank you email*/
-			//$session_data['id'];
+			
 		$this->load->library('email');
 		$config['charset'] = 'utf-8';
 		$config['wordwrap'] = TRUE;
@@ -244,17 +225,7 @@ class Mdl_user extends CI_Model {
 
 		$this->email->send();
 
-			/*End of thank you email*/
-
-
-
-
-
-
-
-
-
-			redirect(BASEURL.'login/activationPending');
+		redirect(BASEURL.'login/activationPending');
 
 
 	}

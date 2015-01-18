@@ -63,7 +63,11 @@ class User extends MX_Controller {
 		$count = $this->mdl_user->count_where($column,$value);
 		return $count;
 	}
-
+	function count_all(){
+		$this->load->model('mdl_user');
+		$count = $this->mdl_user->count_all();
+		return $count;
+	}
 
 	function get_max(){
 		$this->load->model('mdl_user');
