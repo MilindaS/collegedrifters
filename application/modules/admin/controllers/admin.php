@@ -6,6 +6,7 @@ class Admin extends MX_Controller {
 		parent::__construct();
 		$this->load->model('mdl_admin');
 		$this->load->module('home');
+		$this->load->module('user');
 	}
 
 	function dash(){
@@ -20,6 +21,7 @@ class Admin extends MX_Controller {
 	}
 	function users(){
 		$data['page_name'] = 'Users';
+		$data['user_data'] = $this->user->get('user_id')->result();
 		$this->generateAdminTempalte('users',$data);
 	}
 	function smlinks(){
@@ -29,7 +31,7 @@ class Admin extends MX_Controller {
 	function generateAdminTempalte($page=null,$data=null,$css=null,$js=null){
 		$this->home->header($css,$js);
 		$this->load->view('admin-template-block-header',$data);
-		$this->load->view($page);
+		$this->load->view($page,$data);
 		$this->load->view('admin-template-block-footer');
 		$this->home->footer();
 	}

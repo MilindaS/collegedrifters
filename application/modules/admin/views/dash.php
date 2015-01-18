@@ -65,6 +65,54 @@
 	</div>
 </div>
 
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default admin-dash-snippet">
+		  <div class="panel-body">
+		  	<div class="row">
+		  		<div class="col-md-12">
+		  			
+		  		<div class="admin-customize-snippet-title">
+		  			Customize
+		  		</div>
+		  		<div class="admin-customize-snippet-sub-title">
+		  			Here is some shortcuts to manage site
+		  			</div>
+		  	</div>
+		  	</div>
+
+		  	<div class="row" id="get-start-init">
+		  		<div class="col-md-12">
+		  			<div class="row">
+		  				<div class="col-md-4 col-sm-12 col-xs-12">
+		  					<div id="get-started">Get Started</div>
+		  					<div class="btn btn-primary btn-lg" id="visit-marketplace-button">Visit Marketplace</div>
+		  				</div>
+		  				<div class="col-md-4 col-sm-12 col-xs-12">
+		  					<div id="get-started-action">Actions</div>
+		  					<div id="action-content">
+		  						<ul class="list-group">
+		  							<li><span class="glyphicon glyphicon-book"></span><a href="">
+		  								 Edit Pages
+		  							</a></li>
+		  							<li><span class="glyphicon glyphicon-user"></span><a href="">
+		  								 Manage Users
+		  							</a></li>
+		  							<li><span class="glyphicon glyphicon-heart-empty"></span><a href="">
+		  								 Edit Social Media Links
+		  							</a></li>
+		  						</ul>
+		  					</div>
+		  				</div>
+		  				<div class="col-md-4 col-sm-12 col-xs-12"></div>
+		  			</div>
+		  		</div>
+		  	</div>
+
+		</div>
+	</div>
+</div>
+
 
 
 

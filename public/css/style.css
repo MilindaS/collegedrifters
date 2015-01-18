@@ -618,7 +618,8 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 .stack-body-nav{
 	background:#1B1E24;
 	color: #8B91A0;
-	height:100%;
+	min-height:100%;
+	height:auto;
 }
 
 .stack-body-nav ul {
@@ -817,4 +818,55 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 #snippet-green{
 	background:#36BA99;
 	color: #FFF;
+}
+
+
+#get-start-init{
+	margin-top:20px;
+
+}
+
+.admin-customize-snippet-title{
+font-size: 25px;
+color: #434A54;
+text-align: left;
+}
+.admin-customize-snippet-sub-title{
+	font-size: 14px;
+	
+	color: #434A54;
+	text-align: left;
+}
+#get-started{
+	text-align: left;
+	
+	font-size: 16px;
+	font-weight: bold;
+}
+#get-started-action{
+	text-align: left;
+	
+	font-size: 16px;
+	font-weight: bold;
+}
+#visit-marketplace-button{
+	float: left;
+	
+	margin-top: 10px;
+	border-radius: 3px;
+}
+#action-content ul{
+	float: left;
+	list-style-type: none;
+	margin:0px;
+	padding: 0px;
+}
+#action-content ul li{
+	float:left;
+	width:100%;
+	text-align: left;
+	padding:5px 2px;
+}
+#action-content{
+	float: left;
 }
