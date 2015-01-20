@@ -31,9 +31,38 @@ class Admin extends MX_Controller {
 		$data['page'] = $active_page;
 		$this->generateAdminTempalte('users',$data);
 	}
-	function smlinks(){
-		$data['page_name'] = 'Social Media';
-		$this->generateAdminTempalte('smlinks',$data);
+	function user($user_id=null){
+		$data['user_data'] = $this->user->get_where($user_id)->result();
+		$this->generateAdminTempalte('user/view',$data);
+	}
+	function smlinks($id=null){
+		if($id){
+			echo 1;
+		}else{
+			$this->load->module('smlinks');
+			$data['links'] = $this->smlinks->get('smlinks_id')->result();
+			$data['page_name'] = 'Social Media';
+			$this->generateAdminTempalte('smlinks',$data);
+		}
+	}
+	function editSmlinksPopup(){
+		$smlinks_id =$_POST['id'];
+		$this->load->module('smlinks');
+		$link_data = $this->smlinks->get_where($smlinks_id)->result();
+		$data = json_encode($link_data);
+		echo $data;
+	}
+	function editSmlinksSave(){
+		$smlinks_id = $_POST['smlinks_id'];
+		$smlink_url = $_POST['smlink_url'];
+		$smlink_name = $_POST['smlink_name'];
+		$this->load->module('smlinks');
+		$data = array(
+               'smlinks_url' => $smlink_url,
+               'smlinks_name' => $smlink_name
+            );
+		$this->smlinks->_update($smlinks_id,$data);
+		
 	}
 	function generateAdminTempalte($page=null,$data=null,$css=null,$js=null){
 		$this->home->header($css,$js);

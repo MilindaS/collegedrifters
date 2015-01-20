@@ -26,7 +26,7 @@
                 <td class="hidden-xs"><?php echo $user->user_city;?></td>
                 <td class="hidden-xs"><?php echo $user->user_state;?></td>
             	<td>
-					<button type="button" class="btn edit">View</button>
+					<a class="btn edit" href="<?php echo BASEURL;?>admin/user/<?php echo $user->user_id;?>">View</a>
                     <button type="button" class="btn delete">Delete</button>
             	</td>
             </tr>
