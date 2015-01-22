@@ -7,6 +7,7 @@ class Admin extends MX_Controller {
 		$this->load->model('mdl_admin');
 		$this->load->module('home');
 		$this->load->module('user');
+		$this->load->module('category');
 	}
 
 	function dash(){
@@ -18,6 +19,17 @@ class Admin extends MX_Controller {
 	function pages(){
 		$data['page_name'] = 'Pages';
 		$this->generateAdminTempalte('pages',$data);
+	}
+	function dbmgt($page=null){
+		$per_page_user = 7;
+		$active_page = $page;
+		$page = ($page!=null) ? ($page-1) : 0;
+		$page = $page*$per_page_user;
+		$total_categories = $this->category->count_all();
+		$data['iteratinons'] = ceil(($total_categories/$per_page_user));
+		$data['category_data'] = $this->category->get_with_limit($per_page_user,$page,'category_id')->result();
+		$data['page'] = $active_page;
+		$this->generateAdminTempalte('database-mgt',$data);
 	}
 	function users($page=null){
 		$data['page_name'] = 'Users';

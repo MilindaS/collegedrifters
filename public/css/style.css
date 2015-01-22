@@ -882,3 +882,10 @@ background-color: #264566;
 border-color: #264566;
 cursor: default;
 }
+
+.admin-body-page-sub-name{
+	padding-bottom:10px;
+	font-size: 14px;
+	margin:10px 5px 20px 5px;
+	color:#555;
+}
