@@ -31,21 +31,21 @@ class Mdl_item extends CI_Model {
 			$session_data = $this->session->userdata('logged_in');
 			$item_user_id =  $session_data['id'];
 
-		if(isset($_POST['itemName']) AND $_POST['itemName']!=null ){
-			$item_name = $_POST['itemName'];
+		if(isset($_POST['item_name']) AND $_POST['item_name']!=null ){
+			$item_name = $_POST['item_name'];
 		}
-		if(isset($_POST['itemDesc']) AND $_POST['itemDesc']!=null ){
-			$item_description = $_POST['itemDesc'];
-		}
-
-
-		if(isset($_POST['itemCategory']) AND $_POST['itemCategory']!=null ){
-			$item_category = $_POST['itemCategory'];
+		if(isset($_POST['item_description']) AND $_POST['item_description']!=null ){
+			$item_description = $_POST['item_description'];
 		}
 
 
-		if(isset($_POST['itemPrice']) AND $_POST['itemPrice']!=null ){
-			$item_price = $_POST['itemPrice'];
+		if(isset($_POST['item_category']) AND $_POST['item_category']!=null ){
+			$item_category = $_POST['item_category'];
+		}
+
+
+		if(isset($_POST['item_price']) AND $_POST['item_price']!=null ){
+			$item_price = $_POST['item_price'];
 		}
 		if(isset($_POST['item_type']) AND $_POST['item_type']!=null ){
 			$item_type = $_POST['item_type'];
@@ -62,7 +62,9 @@ class Mdl_item extends CI_Model {
 		}
 
 
-
+		if(isset($_POST['featured_product']) AND $_POST['featured_product']!=null ){
+			$item_type = $_POST['featured_product'];
+		}
 
 		$item_status = 1;
 
@@ -105,8 +107,11 @@ class Mdl_item extends CI_Model {
 										);
 			$query = $this->db->query($sql,$params);
 
+			
+			if(isset($_POST['featured_product']) AND $_POST['featured_product']!=null ){
+			redirect(BASEURL.'admin/featuredProd');
+			}
 			redirect(BASEURL.'item/add');
-
 	}
 
 
@@ -187,7 +192,9 @@ class Mdl_item extends CI_Model {
 										$item_id
 										);
 			$query = $this->db->query($sql,$params);
-
+			if(isset($_POST['featured_product']) AND $_POST['featured_product']!=null ){
+			redirect(BASEURL.'admin/featuredProd');
+			}
 			redirect(BASEURL.'item/edit/'.$item_id);
 
 	}

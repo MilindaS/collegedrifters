@@ -35,13 +35,30 @@ class Admin extends MX_Controller {
 		$page = $page*$per_page_user;
 		$total_categories = $this->category->count_all();
 		$data['iteratinons'] = ceil(($total_categories/$per_page_user));
-		$data['category_data'] = $this->category->get_with_limit($per_page_user,$page,'category_id')->result();
 		$data['page'] = $active_page;
+
+		$data['category_data'] = $this->category->get_with_limit($per_page_user,$page,'category_id')->result();
 		$this->generateAdminTempalte('categories',$data);
 	}
-	function featuredProd(){
-		$data['featured_product_data'] = $this->item->get_where_custom('item_type',$page,'category_id')->result();
-		$this->generateAdminTempalte('featured-products',$data);
+	function featuredProd($page=null){
+		$css_array = array('bootstrapValidator.css','datepicker.css');
+		$js_array = array('bootstrapValidator.min.js','jquery.form.js');
+		$per_page_prod = 7;
+		$active_page = $page;
+		$page = ($page!=null) ? ($page-1) : 0;
+		$page = $page*$per_page_prod;
+		$total_prod = $this->item->_custom_query("SELECT * from tb_items WHERE item_type=2 ORDER BY item_id DESC")->num_rows();
+		$data['iteratinons'] = ceil(($total_prod/$per_page_prod));
+		$data['page'] = $active_page;
+		$data['featured_item_list'] = $this->item->_custom_query("SELECT * from tb_items WHERE item_type=2 ORDER BY item_id DESC")->result();
+		$data['category_data'] = $this->category->get('category_id')->result_array();
+		$this->generateAdminTempalte('featured-products',$data,$css_array,$js_array);
+	}
+	function editItemPopup(){
+		$item_id =$_POST['id'];
+		$item_data = $this->item->get_where($item_id)->result();
+		$data = json_encode($item_data);
+		echo $data;
 	}
 	function users($page=null){
 		$data['page_name'] = 'Users';

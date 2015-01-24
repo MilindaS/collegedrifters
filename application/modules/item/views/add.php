@@ -28,26 +28,26 @@
 					<form class="form-horizontal" id="defaultForm" method="post" action="<?php echo BASEURL;?>item/save">
 
 						  <div class="form-group">
-							<label for="itemName" class="col-sm-2 control-label" style="color:#525252;">Item Name</label>
+							<label for="item_name" class="col-sm-2 control-label" style="color:#525252;">Item Name</label>
 							<div class="col-sm-10">
-							  <input type="text" class="form-control" id="itemName" name="itemName" placeholder="Enter Item Name">
+							  <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Enter Item Name">
 							</div>
 						  </div>
 
 						  <div class="form-group">
-							<label for="itemDesc" class="col-sm-2 control-label" style="color:#525252;">Item Description</label>
+							<label for="item_description" class="col-sm-2 control-label" style="color:#525252;">Item Description</label>
 							<div class="col-sm-10">
-							  <textarea class="form-control" rows="3" id="itemDesc" name="itemDesc" placeholder="Enter Item Description"></textarea>
+							  <textarea class="form-control" rows="3" id="item_description" name="item_description" placeholder="Enter Item Description"></textarea>
 							</div>
 						  </div>
 
 
 							<div class="form-group">
-							<label for="itemCategory" class="col-sm-2 control-label" style="color:#525252;">Item Category</label>
+							<label for="item_category" class="col-sm-2 control-label" style="color:#525252;">Item Category</label>
 							<div class="col-sm-10">
 
 
-								<select name="itemCategory" id="itemCategory" class="form-control" >
+								<select name="item_category" id="item_category" class="form-control" >
                                     <option value="">Select a Category</option>
 									<?php foreach($this->category_array as $category)
 									{
@@ -64,9 +64,9 @@
 						  </div>
 
 						  <div class="form-group">
-							<label for="itemPrice" class="col-sm-2 control-label" style="color:#525252;">Item Price</label>
+							<label for="item_price" class="col-sm-2 control-label" style="color:#525252;">Item Price</label>
 							<div class="col-sm-10">
-							  <input type="text" class="form-control" id="itemPrice" name="itemPrice" placeholder="Enter Item Price : $">
+							  <input type="text" class="form-control" id="item_price" name="item_price" placeholder="Enter Item Price : $">
 							</div>
 						  </div>
 						  <?php
@@ -147,28 +147,28 @@
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-			itemName: {
+			item_name: {
                 validators: {
                     notEmpty: {
                         message: 'Item Name cannot be empty'
                     }
                 }
             },
-			itemDesc: {
+			item_description: {
                 validators: {
 					notEmpty: {
                         message: 'Item Description cannot be empty'
                     }
                 }
             },
-            itemCategory: {
+            item_category: {
                 validators: {
                     notEmpty: {
                         message: 'Item Category cannot be empty'
                     }
                 }
             },
-			itemPrice: {
+			item_price: {
                 validators: {
                     notEmpty: {
                         message: 'Item Price cannot be empty'
