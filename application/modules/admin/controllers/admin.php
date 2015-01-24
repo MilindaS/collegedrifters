@@ -70,6 +70,11 @@ class Admin extends MX_Controller {
 		$data = json_encode($category_data);
 		echo $data;
 	}
+	function deleteCategorySave(){
+		$category_id =$_POST['id'];
+		$this->category->_delete($category_id);
+		return true;
+	}
 	function editSmlinksSave(){
 		$smlinks_id = $_POST['smlinks_id'];
 		$smlink_url = $_POST['smlink_url'];

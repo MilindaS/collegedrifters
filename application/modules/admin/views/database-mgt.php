@@ -18,7 +18,7 @@
             	<td><?php echo $category->category_name;?></td>
                 <td>
 					<button type="button" class="btn edit category_edit" id="<?php echo $category->category_id;?>">Edit</button>
-          <button type="button" class="btn delete">Delete</button>
+          <button type="button" class="btn delete catetory_delete" id="<?php echo $category->category_id;?>">Delete</button>
             	</td>
             </tr>
             <?php } ?>
@@ -99,6 +99,40 @@
                   }
                 );
         });
+
+        $('.catetory_delete').click(function(){
+          
+          $.post("<?php echo BASEURL;?>admin/editCategoryPopup",
+                  {
+                    id:$(this).attr('id'),
+                  },
+                  function(data,status){
+                    //alert("Data: " + data + "\nStatus: " + status);
+                    data = $.parseJSON(data)[0];
+                    //console.log(data);
+                    $('#category__del_name').html('&#9899;&nbsp'+data.category_name);
+                    $('#category__del_id').val(data.category_id);
+
+                    //$('#smlink_url').val(data.smlinks_url);
+                    $('#category_modal_del').modal('show')
+                  }
+                );
+        });
+        $('#delete_category_cnfm').click(function(){
+          var category_id = $('#category__del_id').val();
+          
+          $.post("<?php echo BASEURL;?>admin/deleteCategorySave",
+                  {
+                    id:category_id
+                  },
+                  function(data,status){
+                    $('#category_modal').modal('hide');
+                    window.location.reload(true);
+                  }
+                );
+        });
+
+
     });
 
 
@@ -118,14 +152,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title"><span id="change_type">Edit</span> Social Media Link</h4>
+        <h4 class="modal-title"><span id="change_type">Edit</span> Category</h4>
       </div>
       <div class="modal-body">
 
 
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-3 control-label">Category Name :</label>
-            <div class="col-sm-9">
+            <label for="inputEmail3" class="col-sm-3 col-xs-3 control-label">Category <span class="hidden-xs">Name</span></label>
+            <div class="col-sm-9 col-xs-9">
               <input type="text" id="category_name" class="form-control" placeholder="Name">
               <input type="hidden" id="category_id">
             </div>
@@ -134,6 +168,27 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" id="update_category">Update</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</form>
+
+<form class="form-horizontal" id="category_form_del">
+<div class="modal fade" id="category_modal_del">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Are you really sure about delete this!</h4>
+      </div>
+      <div class="modal-body">
+        <div id="category__del_name"></div>
+      </div>
+      <input type="hidden" id="category__del_id">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id="delete_category_cnfm">Delete</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
