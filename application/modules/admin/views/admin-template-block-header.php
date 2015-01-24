@@ -28,7 +28,8 @@
 								<span class="glyphicon glyphicon-cog"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Logout</a></li>
+								<li><a href="<?php echo BASEURL;?>marketplace/listView"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;Marketplace</a></li>
+								<li><a href="<?php echo BASEURL;?>login/logout"><span class="glyphicon glyphicon-log-out" ></span>&nbsp;&nbsp;&nbsp;Logout</a></li>
 							</ul>
 						</div>
 					</div>

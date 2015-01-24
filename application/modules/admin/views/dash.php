@@ -19,7 +19,7 @@
 
 		  		</div>
 				<div class="col-md-7 col-xs-7 col-sm-7" id="total-item-snippet-text">
-					<div id="total-item-count">48</div>
+					<div id="total-item-count"><?php echo $item_count;?></div>
 					<div id="total-item-snippet-title">Items</div>
 					<div id="total-item-sub-title">In collegedrifters</div>
 				</div>
@@ -37,7 +37,7 @@
 
 		  		</div>
 				<div class="col-md-7 col-xs-7 col-sm-7" id="total-user-snippet-text">
-					<div id="total-user-count">48</div>
+					<div id="total-user-count"><?php echo $user_count;?></div>
 					<div id="total-user-snippet-title">Members</div>
 					<div id="total-user-sub-title">In collegedrifters</div>
 				</div>

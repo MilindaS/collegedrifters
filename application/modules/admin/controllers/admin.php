@@ -4,14 +4,19 @@ class Admin extends MX_Controller {
 
 	function __construct(){
 		parent::__construct();
+		if(!$this->session->userdata('logged_in')){	redirect(BASEURL.'login/loginView', 'refresh');}
+
 		$this->load->model('mdl_admin');
 		$this->load->module('home');
 		$this->load->module('user');
 		$this->load->module('category');
+		$this->load->module('item');
 	}
 
 	function dash(){
 		$data['page_name'] = 'Dashboard';
+		$data['item_count'] = $this->item->count_all();
+		$data['user_count'] = $this->user->count_all();
 		$css_array = array('odometer-theme-default.css');
 		$js_array = array('odometer.min.js');
 		$this->generateAdminTempalte('dash',$data,$css_array,$js_array);

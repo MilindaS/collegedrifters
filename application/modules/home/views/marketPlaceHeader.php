@@ -66,7 +66,7 @@ $exploded_url = explode('/',uri_string());
 				</div>
 
 				<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
-					<ul class="cdTopList cdTopList3" style="margin-left:-100px;">
+					<!-- <ul class="cdTopList cdTopList3" style="margin-left:-100px;">
 						<li class="dropdown"><span class="glyphicon glyphicon-user"></span> |  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $session_data['username'];?> <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="<?php echo BASEURL;?>profile/view"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Profile</a></li>
@@ -75,7 +75,18 @@ $exploded_url = explode('/',uri_string());
 						</li>
 
 
-					</ul>
+					</ul> -->
+
+					<div class="pull-right"><?php echo $session_data['username'];?>  |
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<span class="glyphicon glyphicon-cog"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+							<li><a href="<?php echo BASEURL;?>profile/view"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Profile</a></li>
+								<?php if($session_data['usertype']==2){?><li><a href="<?php echo BASEURL;?>admin/dash"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;Dashboard</a></li><?php } ?>
+								<li><a href="<?php echo BASEURL;?>login/logout"><span class="glyphicon glyphicon-log-out" ></span>&nbsp;&nbsp;&nbsp;Logout</a></li>
+							</ul>
+					</div>
 				</div>
 
 			</div>

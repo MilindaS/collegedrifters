@@ -77,7 +77,10 @@ class Item extends MX_Controller {
 		$count = $this->mdl_item->count_where($column,$value);
 		return $count;
 	}
-
+	function count_all(){
+		$num_rows = $this->mdl_item->count_all();
+		return $num_rows;
+	}
 
 	function get_max(){
 		$max_id = $this->mdl_item-> get_max();
