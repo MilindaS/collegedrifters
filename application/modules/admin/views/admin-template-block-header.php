@@ -1,5 +1,6 @@
 <script>
 	$(document).ready(function(){
+		$('.stack-body').css({'min-height':$(document).outerHeight()-40});
 		$('.stack-body-nav').css({'height':$('.stack-body').height()})
 	});
 </script>
@@ -62,5 +63,5 @@
 			</div>
 
 			<div class="col-md-10 col-sm-11 col-xs-10">
-				<div class="row stack-body">
+				<div class="row stack-body" >
 					<div class="col-md-12 scrolly">
