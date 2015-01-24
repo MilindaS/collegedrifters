@@ -28,7 +28,7 @@ class Admin extends MX_Controller {
 		$data['page_name'] = 'Pages';
 		$this->generateAdminTempalte('pages',$data);
 	}
-	function dbmgt($page=null){
+	function categories($page=null){
 		$per_page_user = 7;
 		$active_page = $page;
 		$page = ($page!=null) ? ($page-1) : 0;
@@ -37,7 +37,11 @@ class Admin extends MX_Controller {
 		$data['iteratinons'] = ceil(($total_categories/$per_page_user));
 		$data['category_data'] = $this->category->get_with_limit($per_page_user,$page,'category_id')->result();
 		$data['page'] = $active_page;
-		$this->generateAdminTempalte('database-mgt',$data);
+		$this->generateAdminTempalte('categories',$data);
+	}
+	function featuredProd(){
+		$data['featured_product_data'] = $this->item->get_where_custom('item_type',$page,'category_id')->result();
+		$this->generateAdminTempalte('featured-products',$data);
 	}
 	function users($page=null){
 		$data['page_name'] = 'Users';

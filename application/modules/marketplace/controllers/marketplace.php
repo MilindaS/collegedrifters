@@ -6,19 +6,37 @@ class Marketplace extends MX_Controller {
 		parent::__construct();
 		$this->load->model('mdl_marketplace');
 		$this->load->module('home');
+		$this->load->module('item');
+		$this->load->module('category');
 		$this->css_array = array('flexslider.css','bootstrapValidator.css');
 		$this->js_array = array('jquery.flexslider-min.js','bootstrapValidator.min.js');
 	}
 	public function listView($page=null)
 	 {
-	 	$this->page = $page;
+	 	$per_page_item = 5;
+		$active_page = $page;
+		$page = ($page!=null) ? ($page-1) : 0;
+		$page = $page*$per_page_item;
 
-	 	$this->item_list = $this->mdl_marketplace->getItemList($page);
-	 	$this->total_items = $this->mdl_marketplace->getItemCount();
-	 	$this->category_array = $this->mdl_marketplace->getCategory();
+		$total_items = $this->item->count_all();
+
+		$data['iteratinons'] = ceil(($total_items/$per_page_item));
+
+		$data['item_list'] = $this->item->get_with_limit($per_page_item,$page,'item_id')->result();
+	 	
+	 	$data['featured_item_list'] = $this->item->_custom_query("SELECT * from tb_items WHERE item_type=2 ORDER BY item_id DESC LIMIT 0,4 ")->result();
+
+
+	 	$data['page'] = $active_page;
+	 	// $data['item_list'] = $this->item->getItemList($page);
+	 	
+
+
+	 	// $data['total_items'] = $this->mdl_marketplace->getItemCount();
+	 	$data['category_array'] = $this->category->get('category_id')->result();;
 
 		$this->home->marketPlaceHeader();
-		$this->load->view('listView');
+		$this->load->view('listView',$data);
 		$this->home->marketPlaceFooter();
 	}
 	public function localAds($page=null)

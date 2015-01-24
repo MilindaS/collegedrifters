@@ -34,7 +34,34 @@ class Mdl_marketplace extends CI_Model {
 		$query = $this->db->query($sql,$params);
 		return $query->result_array();
 	}
+public function getFeaturedItemList($page,$item_type=null){
+		$counter = 5;
+		$from = 0;
+		$to = $counter;
 
+		if($page!=null){
+			$from = $page*$counter - $counter;
+			$to = $page*$counter;
+		}
+
+		$sql = "SELECT * FROM tb_items
+					INNER JOIN tb_categories
+					ON tb_items.item_category = tb_categories.category_id
+					INNER JOIN tb_users
+					ON tb_items.item_user_id = tb_users.user_id";
+
+
+		if($item_type !=null){
+			$sql .= " WHERE tb_items.item_type = ? ORDER BY tb_items.item_created_date DESC LIMIT ?, ? ";
+			$params = array($item_type,$from,$to);
+		}
+		else{
+			$sql .= " ORDER BY tb_items.item_created_date DESC LIMIT ?, ?";
+			$params = array($from,$to);
+		}
+		$query = $this->db->query($sql,$params);
+		return $query->result_array();
+	}
 	public function getItemCount(){
 		$sql = "SELECT * FROM tb_items
 					INNER JOIN tb_categories

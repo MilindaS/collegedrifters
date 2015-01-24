@@ -1,3 +1,6 @@
+<?php
+
+?>
 <div id="advancedSearchBar" >
 <div class="container">
 
@@ -23,8 +26,8 @@
 							<input type="text" class="form-control" name="maxPrice" placeholder="$ Max">
 								<select class="form-control" name="category" >
 													<option value="">Select a Category</option>
-													<?php foreach($this->category_array as $category){?>
-													<option value="<?php echo $category['category_id']?>"><?php echo $category['category_name']?></option>
+													<?php foreach($category_array as $category){?>
+													<option value="<?php echo $category->category_id;?>"><?php echo $category->category_name;?></option>
 													<?php }?>
 								</select>
 						  </div>
@@ -44,16 +47,81 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-xs-12">
+			<div class="panel panel-default">
+<div class="panel-body">
+<div class="admin-body-page-name">Featured Items</div>
+<?php
+$counter = 0;
+$limit_ct = 2;
+foreach($featured_item_list as $item){
+	$category = modules::run('category/get_where',$item->item_category)->result_array();
+	if($counter%$limit_ct==0){ ?>
+	<div class="row hidden-lg hidden-md">
+<?php }
+$counter ++;
+?>
 
-				<?php foreach($this->item_list as $item){?>
+			<div class="col-sm-6 col-xs-6" style="padding:5px;">
+			<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+			<span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
+				<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
+			</div>
+
+
+
+
+
+
+
+<?php if($counter%$limit_ct==0){ ?>
+	</div>
+<?php }} ?>
+<div class="row hidden-xs hidden-sm">
+<?php
+foreach($featured_item_list as $item){
+$category = modules::run('category/get_where',$item->item_category)->result_array();
+	?>
+		<div class="col-md-3" style="padding:5px;">
+		<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+				 <span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
+				<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
+
+		</div>
+<?php } ?>
+	</div>
+<div class="row">
+	<div class="col-md-12 col-xs-12 col-sm-12" style="padding:10px;">
+		<div class="pull-right">
+			<a href="" class="btn btn-default">See More <span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="panel panel-default">
+<div class="panel-body">
+<div class="admin-body-page-name">All Products</div>
+				<?php foreach($item_list as $item){
+						$user = modules::run('user/get_where',$item->item_user_id)->result_array();
+						$category = modules::run('category/get_where',$item->item_category)->result_array();
+						//print_r($category );
+						//print_r(($user));
+				?>
+
 				<div class="row">
 					<div class="col-md-12">
 					<div class="panel panel-default">
 					  <div class="panel-body">
 						<div class="row">
-							<?php if($item['item_image']!=null){?>
+							<?php if($item->item_image!=null){?>
 							<div class="col-md-3">
-								<img src="<?php if($item['item_image']!=null){echo BASEURL.$item['item_image'];}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
+								<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
 							</div>
 							<div class="col-md-9">
 							<?php } else{?>
@@ -61,23 +129,23 @@
 							<?php }?>
 								<div class="row">
 									<div class="col-md-12">
-										<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" class="postedAdName"><?php echo $item['item_name'];?></a> <span class="label label-primary postedAdPrice" >$ <?php echo $item['item_price'];?></span>
+										<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" class="postedAdName"><?php echo $item->item_name;?></a> <span class="label label-primary postedAdPrice" >$ <?php echo $item->item_price;?></span>
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-md-12">
-										<div class="postedAdAuthor"> <span class="glyphicon glyphicon-user" ></span>&nbsp; By <?php echo $item['user_firstName'];?> | On <?php echo   date("Y-M-d   g:i A", strtotime($item['item_created_date'])); ;?> </div>
+										<div class="postedAdAuthor"> <span class="glyphicon glyphicon-user" ></span>&nbsp; By <?php echo $user[0]['user_firstName'];?> | On <?php echo   date("Y-M-d   g:i A", strtotime($item->item_created_date)); ;?> </div>
 									</div>
 								</div>
 
-								<p class="postedAdContent" style="min-height:50px;"><?php echo substr($item['item_description'],0,300);?>&nbsp;&nbsp;<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" class="btn btn-warning btn-xs">Read More</a></p>
+								<p class="postedAdContent" style="min-height:50px;"><?php echo substr($item->item_description,0,300);?>&nbsp;&nbsp;</p>
 
 								<div class="row">
 									<div class="col-md-12">
 										Tags :
-										<span class="label label-primary"><?php echo $item['category_name'];?></span>
-
+										<span class="label label-primary"><?php echo $category[0]['category_name'];?></span>
+<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" class="btn btn-warning btn-sm pull-right">Read More</a>
 									</div>
 								</div>
 
@@ -94,7 +162,8 @@
 
 
 
-
+	</div>
+</div>
 
 
 	</div>
@@ -103,9 +172,9 @@
 <div class="row">
 	<div class="col-md-12">
 		<ul class="pagination pull-right">
-			<?php for($i=1;$i<=$this->total_items;$i++){?>
-				<li <?php if($this->page==$i){ echo 'class="active"';}?>><a href="<?php echo BASEURL;?>marketplace/listView/<?php echo $i?>" ><?php echo $i?></a></li>
-			<?php }?>
+			<?php for($i=1;$i<=$iteratinons;$i++){?>
+                <li <?php if($page==$i){ echo 'class="active"';}?>><a href="<?php echo BASEURL;?>marketplace/listView/<?php echo $i?>" ><?php echo $i?></a></li>
+            <?php }?>
 		</ul>
 	</div>
 </div>

@@ -2,23 +2,25 @@
 <div class="col-md-12">
 <div class="panel panel-default admin-body">
   <div class="panel-body">
-  <div class="admin-body-page-name">Database Management</div>
-    <div class="admin-body-page-sub-name">Categories <button type="button" class="btn add" id="add_cat_new_btn">Add New</button></div>
+  <div class="admin-body-page-name">Featured Products</div>
+    <div class="admin-body-page-sub-name">Products <button type="button" class="btn add" id="add_cat_new_btn">Add New</button></div>
 
     <table class="table table-striped">
 		<thead>
         <tr class="active" >
-          <th >Category Name</th>
+          <th >Product Name</th>
+          <th >Product Price</th>
           <th class="action">Action</th>
         </tr>
     </thead>
     <tbody>
-        <?php foreach($category_data as $category){?>
+        <?php foreach($featured_product_data as $product){?>
         	<tr>
-            	<td><?php echo $category->category_name;?></td>
+            	<td><?php echo $product->item_name;?></td>
+            	<td><?php echo $product->item_price;?></td>
                 <td>
-					<button type="button" class="btn edit category_edit" id="<?php echo $category->category_id;?>">Edit</button>
-          <button type="button" class="btn delete catetory_delete" id="<?php echo $category->category_id;?>">Delete</button>
+					<button type="button" class="btn edit category_edit" id="<?php echo $product->item_id;?>">Edit</button>
+          <button type="button" class="btn delete catetory_delete" id="<?php echo $product->item_id;?>">Delete</button>
             	</td>
             </tr>
             <?php } ?>
@@ -80,6 +82,7 @@
         $('#add_cat_new_btn').click(function(){
           $('#change_type').html('Add');
           $('#update_category').html('Add');
+          $('#category_name').val('');
           $('#category_modal').modal('show')
         });
 

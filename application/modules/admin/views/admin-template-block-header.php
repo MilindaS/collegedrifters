@@ -51,12 +51,13 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ul>
-								<a href="<?php echo BASEURL;?>admin/dash"><li><span class="glyphicon glyphicon-dashboard"></span><span class="hidden-xs hidden-sm">Dashboard</span></li></a>
-								<a href="<?php echo BASEURL;?>admin/pages"><li><span class="glyphicon glyphicon-book"></span><span class="hidden-xs hidden-sm">Pages</span></li></a>
-								<a href="<?php echo BASEURL;?>admin/users" ><li><span class="glyphicon glyphicon-user"></span><span class="hidden-xs hidden-sm">Users</span></li></a>
-								<a href="<?php echo BASEURL;?>admin/smlinks"><li><span class="glyphicon glyphicon-heart-empty"></span><span class="hidden-xs hidden-sm">Social Media</span></li></a>
-								<a href="<?php echo BASEURL;?>admin/dbmgt"><li><span class="glyphicon glyphicon-hdd"></span><span class="hidden-xs hidden-sm hidden-md ">DB Mgt</span></li></a>
-								<a href="<?php echo BASEURL;?>admin/stat"><li><span class="glyphicon glyphicon-hdd"></span><span class="hidden-xs hidden-sm hidden-md ">Statistics</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/dash" data-toggle="tooltip" title="Dashboard"><li><span class="glyphicon glyphicon-dashboard"></span><span class="hidden-xs hidden-sm">Dashboard</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/pages" data-toggle="tooltip" title="Pages"><li><span class="glyphicon glyphicon-book"></span><span class="hidden-xs hidden-sm">Pages</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/users" data-toggle="tooltip" title="Users"><li><span class="glyphicon glyphicon-user"></span><span class="hidden-xs hidden-sm">Users</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/smlinks" data-toggle="tooltip" title="Social Media"><li><span class="glyphicon glyphicon-heart-empty"></span><span class="hidden-xs hidden-sm">Social Media</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/categories" data-toggle="tooltip" title="Categories"><li><span class="glyphicon glyphicon-hdd"></span><span class="hidden-xs hidden-sm hidden-md ">Categories</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/stat" data-toggle="tooltip" title="Statistics"><li><span class="glyphicon glyphicon-stats"></span><span class="hidden-xs hidden-sm hidden-md ">Statistics</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/featuredProd" data-toggle="tooltip" title="Featured Products"><li><span class="glyphicon glyphicon-stats"></span><span class="hidden-xs hidden-sm hidden-md ">Featured Products</span></li></a>
 							</ul>
 						</div>
 					</div>
