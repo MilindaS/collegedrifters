@@ -13,7 +13,7 @@ class Mdl_category extends CI_Model {
 	
 	function get($order_by){
 		$table = $this->get_table();
-		$this->db->order_by($order_by);
+		$this->db->order_by($order_by,'desc');
 		$query = $this->db->get($table);
 		return $query;
 	}
@@ -21,7 +21,7 @@ class Mdl_category extends CI_Model {
 	function get_with_limit($limit,$offset,$order_by){
 		$table = $this->get_table();
 		$this->db->limit($limit,$offset);
-		$this->db->order_by($order_by);
+		$this->db->order_by($order_by,'desc');
 		$query = $this->db->get($table);
 		return $query;
 	}

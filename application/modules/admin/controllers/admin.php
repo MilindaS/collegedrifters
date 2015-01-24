@@ -64,6 +64,12 @@ class Admin extends MX_Controller {
 		$data = json_encode($link_data);
 		echo $data;
 	}
+	function editCategoryPopup(){
+		$category_id =$_POST['id'];
+		$category_data = $this->category->get_where($category_id)->result();
+		$data = json_encode($category_data);
+		echo $data;
+	}
 	function editSmlinksSave(){
 		$smlinks_id = $_POST['smlinks_id'];
 		$smlink_url = $_POST['smlink_url'];
@@ -74,7 +80,20 @@ class Admin extends MX_Controller {
                'smlinks_name' => $smlink_name
             );
 		$this->smlinks->_update($smlinks_id,$data);
-		
+	}
+
+	function editCategorySave(){
+		$category_id = $_POST['category_id'];
+		$category_name = $_POST['category_name'];
+		$data = array(
+               'category_name' => $category_name
+            );
+		if($category_id){
+			$this->category->_update($category_id,$data);
+		}
+		else{
+			$this->category->_insert($data);
+		}
 	}
 	function generateAdminTempalte($page=null,$data=null,$css=null,$js=null){
 		$this->home->header($css,$js);
@@ -87,70 +106,6 @@ class Admin extends MX_Controller {
 
 
 
-
-
-
-
-
-	function get($order_by){
-		$this->load->model('mdl_rename');
-		$query = $this->mdl_rename->get($order_by);
-		return $query;
-	}
-
-	function get_with_limit($limit,$offset,$order_by){
-		$this->load->model('mdl_rename');
-		$query = $this->mdl_rename->get_with_limit($limit,$offset,$order_by);
-		return $query;
-	}
-
-	function get_where($id){
-		$this->load->model('mdl_rename');
-		$query = $this->mdl_rename->get_where($id);
-		return $query;
-	}
-
-	function get_where_custom($col,$value){
-		$this->load->model('mdl_rename');
-		$query = $this->mdl_rename->get_where_custom($col,$value);
-		return $query;
-	}
-
-	function _insert($data){
-		$this->load->model('mdl_rename');
-		$this->mdl_rename->_insert($data);
-	}
-
-	function _update($id,$data){
-		$this->load->model('mdl_rename');
-		$this->mdl_rename->_update($id,$data);
-	}
-
-	function _delete($id){
-		$this->load->model('mdl_rename');
-		$this->mdl_rename->_delete($id);
-	}
-
-	function count_where($column,$value){
-		$this->load->model('mdl_rename');
-		$count = $this->mdl_rename->count_where($column,$value);
-		return $count;
-	}
-
-
-	function get_max(){
-		$this->load->model('mdl_rename');
-		$max_id = $this->mdl_rename-> get_max();
-		return $max_id;
-
-	}
-
-	function _custom_query($mysql_query){
-		$this->load->model('mdl_rename');
-		$query = $this->mdl_rename->_custom_query($mysql_query);
-		return $query;
-
-	}
 
 
 

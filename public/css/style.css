@@ -742,6 +742,12 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	color:#DDD;
 	font-size: 13px;
 }
+.admin-body .add{
+	padding:2px 15px;
+	background: #6FA538;
+	color:#FFF;
+	font-size: 13px;
+}
 .admin-body .view{
 	padding:2px 15px;
 	background: #08867A;
@@ -754,7 +760,9 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	color:#FFF;
 	font-size: 13px;
 }
-
+#add_cat_new_btn{
+	margin-left: 20px;
+}
 .admin-dash-snippet{
 	float:left;
 	width:100%;
