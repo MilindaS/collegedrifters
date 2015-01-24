@@ -56,6 +56,7 @@
 								<a href="<?php echo BASEURL;?>admin/users" ><li><span class="glyphicon glyphicon-user"></span><span class="hidden-xs hidden-sm">Users</span></li></a>
 								<a href="<?php echo BASEURL;?>admin/smlinks"><li><span class="glyphicon glyphicon-heart-empty"></span><span class="hidden-xs hidden-sm">Social Media</span></li></a>
 								<a href="<?php echo BASEURL;?>admin/dbmgt"><li><span class="glyphicon glyphicon-hdd"></span><span class="hidden-xs hidden-sm hidden-md ">DB Mgt</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/stat"><li><span class="glyphicon glyphicon-hdd"></span><span class="hidden-xs hidden-sm hidden-md ">Statistics</span></li></a>
 							</ul>
 						</div>
 					</div>

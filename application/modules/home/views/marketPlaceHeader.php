@@ -78,7 +78,7 @@ $exploded_url = explode('/',uri_string());
 					</ul> -->
 
 					<div class="pull-right"><?php echo $session_data['username'];?>  |
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
 								<span class="glyphicon glyphicon-cog"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
