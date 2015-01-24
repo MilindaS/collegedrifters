@@ -2,8 +2,10 @@
   <div class="panel-body">
   <div class="admin-body-page-name">Statistics</div>
     <section id="auth-button"></section>
-	<section id="view-selector"></section>
-	<section id="timeline"></section>
+  <section id="view-selector" style="display:none"></section>
+  <div style="padding:10px;border:1px solid #aaa">
+    <section id="timeline"></section>
+  </div>
   </div>
 </div>
 <!-- Step 1: Create the containing elements. -->

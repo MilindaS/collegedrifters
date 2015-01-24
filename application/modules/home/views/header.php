@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/style.css">
+	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/pill.css">
 
 	<?php
 
@@ -24,6 +25,7 @@
 
 	<script src="<?php	echo BASEURL;?>public/js/jquery-1.11.0.min.js"></script>
 	<script src="<?php	echo BASEURL;?>public/js/bootstrap.js"></script>
+	<script src="<?php	echo BASEURL;?>public/js/jquery.scrollUp.min.js"></script>
 
 	<?php
 
@@ -39,3 +41,10 @@
 	?>
   </head>
   <body>
+
+
+<script>
+	$(function(){
+  $.scrollUp();
+});
+</script>

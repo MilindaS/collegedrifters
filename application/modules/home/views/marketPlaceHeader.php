@@ -15,6 +15,7 @@ $exploded_url = explode('/',uri_string());
 
     <link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/style.css">
+	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/pill.css">
 	<?php
 		if(isset($css_array)){
 			foreach($css_array AS $item){
@@ -25,6 +26,7 @@ $exploded_url = explode('/',uri_string());
 
 	<script src="<?php	echo BASEURL;?>public/js/jquery-1.11.0.min.js"></script>
 	<script src="<?php	echo BASEURL;?>public/js/bootstrap.js"></script>
+	<script src="<?php	echo BASEURL;?>public/js/jquery.scrollUp.min.js"></script>
 	<?php
 	if(isset($js_array))
 	{
@@ -171,3 +173,9 @@ $exploded_url = explode('/',uri_string());
 
 
 <div class="marketplaceBack"></div>
+
+<script>
+	$(function(){
+  $.scrollUp();
+});
+</script>
