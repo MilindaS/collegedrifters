@@ -34,8 +34,14 @@ class Marketplace extends MX_Controller {
 
 	 	// $data['total_items'] = $this->mdl_marketplace->getItemCount();
 	 	$data['category_array'] = $this->category->get('category_id')->result();;
-
-		$this->home->marketPlaceHeader();
+	 	$meta_og_array = array(
+	 		array('property'=>"og:title",'content'=>'College Drifters Item List'),
+	 		array('property'=>"og:url",'content'=>BASEURL.'marketplace/listView'),
+	 		array('property'=>"og:description",'content'=>'College Drifters Item List'),
+	 		array('property'=>"og:image",'content'=>BASEURL.'public/images/logo.png'),
+	 		);
+	 	//print_r($data['meta_array']);
+		$this->home->marketPlaceHeader('','','',$meta_og_array);
 		$this->load->view('listView',$data);
 		$this->home->marketPlaceFooter();
 	}
