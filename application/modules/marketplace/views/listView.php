@@ -66,29 +66,26 @@ $counter ++;
 			<span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
 				<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
 			</div>
-
-
-
-
-
-
-
 <?php if($counter%$limit_ct==0){ ?>
 	</div>
 <?php }} ?>
-<div class="row hidden-xs hidden-sm">
+
+
+
+<div class="row hidden-xs hidden-sm" style="padding:5px;">
 <?php
 foreach($featured_item_list as $item){
 $category = modules::run('category/get_where',$item->item_category)->result_array();
 	?>
-		<div class="col-md-3" style="padding:5px;">
-		<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
-				 <span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
-				<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
+		<div class="col-md-3" >
+			<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+			<span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
+			<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
 
 		</div>
 <?php } ?>
-	</div>
+</div>
+
 <div class="row">
 	<div class="col-md-12 col-xs-12 col-sm-12" style="padding:10px;">
 		<div class="pull-right">

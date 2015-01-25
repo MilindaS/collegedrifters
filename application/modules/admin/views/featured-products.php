@@ -85,26 +85,9 @@
           $('#category_modal').modal('show')
         });
 
-        $('#update_category').click(function(){
-            var category_name = $('#category_name').val();
-            var category_id = $('#category_id').val();
+        $('.item_delete').click(function(){
 
-
-            $.post("<?php echo BASEURL;?>admin/editCategorySave",
-                  {
-                    category_id:category_id,
-                    category_name:category_name
-                  },
-                  function(data,status){
-                    $('#category_modal').modal('hide');
-                    window.location.reload(true);
-                  }
-                );
-        });
-
-        $('.catetory_delete').click(function(){
-
-          $.post("<?php echo BASEURL;?>admin/editCategoryPopup",
+          $.post("<?php echo BASEURL;?>admin/editItemPopup",
                   {
                     id:$(this).attr('id'),
                   },
@@ -112,20 +95,20 @@
                     //alert("Data: " + data + "\nStatus: " + status);
                     data = $.parseJSON(data)[0];
                     //console.log(data);
-                    $('#category__del_name').html('&#9899;&nbsp'+data.category_name);
-                    $('#category__del_id').val(data.category_id);
+                    $('#item_del_name').html('&#9899;&nbsp'+data.item_name);
+                    $('#item_del_id').val(data.item_id);
 
                     //$('#smlink_url').val(data.smlinks_url);
                     $('#category_modal_del').modal('show')
                   }
                 );
         });
-        $('#delete_category_cnfm').click(function(){
-          var category_id = $('#category__del_id').val();
+        $('#delete_item_cnfm').click(function(){
+          var item_del_id = $('#item_del_id').val();
 
-          $.post("<?php echo BASEURL;?>admin/deleteCategorySave",
+          $.post("<?php echo BASEURL;?>admin/deleteItem",
                   {
-                    id:category_id
+                    id:item_del_id
                   },
                   function(data,status){
                     $('#category_modal').modal('hide');
@@ -232,12 +215,12 @@
         <h4 class="modal-title">Are you really sure about delete this!</h4>
       </div>
       <div class="modal-body">
-        <div id="category__del_name"></div>
+        <div id="item_del_name"></div>
       </div>
-      <input type="hidden" id="category__del_id">
+      <input type="hidden" id="item_del_id">
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger" id="delete_category_cnfm">Delete</button>
+        <button type="button" class="btn btn-danger" id="delete_item_cnfm">Delete</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
