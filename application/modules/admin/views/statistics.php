@@ -1,3 +1,11 @@
+<div class="row" style="margin-top:10px;padding:0px;">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                  <li><a href="<?php echo BASEURL;?>admin/dash">Dash</a></li>
+                  <li class="active">Statistics</li>
+                </ol>
+            </div>
+        </div>
 <div class="panel panel-default admin-body">
   <div class="panel-body">
   <div class="admin-body-page-name">Statistics</div>

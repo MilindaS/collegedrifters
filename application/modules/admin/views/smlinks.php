@@ -1,4 +1,14 @@
-<div class="panel panel-default admin-body">
+<div class="row" style="margin-top:10px;padding:0px;">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                  <li><a href="<?php echo BASEURL;?>admin/dash">Dash</a></li>
+                  <li class="active">Social Media</li>
+                </ol>
+            </div>
+        </div>
+<div class="row" >
+<div class="col-md-12">
+<div class="panel panel-default admin-body" >
   <div class="panel-body">
   <div class="admin-body-page-name">Social Media Links</div>
     <table class="table table-striped">
@@ -21,6 +31,8 @@
             <?php } ?>
 		</tbody>
     </table>
+  </div>
+</div>
   </div>
 </div>
 <script>

@@ -3,6 +3,9 @@ html, body
 	padding:0px;
 	margin:0px;
 }
+a:active{
+	outline: none;
+}
 .marketBackground
 {
 	height:100%;
@@ -295,7 +298,10 @@ color:#E5F0FB;
 }
 
 */
-
+.no-featured-item{
+	padding:10px;float:left;margin-left:10px;
+	font-style: italic;
+}
 
 #advancedSearchBar{
 	border-top:1px solid #1F77CF;
@@ -647,7 +653,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 .stack-body-nav ul a {
 	color: #8B91A0;
 	text-decoration: none;
-	padding:10px 10px 10px 20px;
+	padding:10px 10px 10px 15px;
 	float:left;
 	width:100%;
 	border-bottom: 1px solid #22262E;
@@ -706,7 +712,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 }
 #stack-nav-greet-img{
 	padding: 5px;
-	margin: 20px 0px 10px 10px;
+	margin: 10px 0px 0px 0px;
 	width:50px;
 	height:50px;
 	border-radius: 25px;
@@ -722,7 +728,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 		display: hidden;
 	}
 	.stack-head-nav{
-	padding:15px;
+	padding:15px 2px;
 	}
 	.stack-head .col-md-4{
 		font-size: 16px;
@@ -736,7 +742,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 
 /*Admin Pages*/
 .admin-body{
-	margin-top:10px;
+
 }
 .admin-body table{
 	font-size: 14px;
