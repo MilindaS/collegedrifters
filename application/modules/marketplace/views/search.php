@@ -17,8 +17,8 @@
 					<div class="collapse navbar-collapse" id="searchContetn" >
 					  	<form class="navbar-form navbar-left" role="search" method="POST" action="<?php echo BASEURL;?>marketplace/search">
 						  <div class="form-group">
-							<input type="text" class="form-control" name="city" placeholder="City"   style="max-width:100px;width:100%;" value="<?php if(isset($_POST['city'])){echo $_POST['city'];}?>">
-							<input type="text" class="form-control" name="state" placeholder="State"  value="<?php if(isset($_POST['state'])){echo $_POST['state'];}?>" style="max-width:100px;width:100%;">
+							<input type="text" class="form-control" name="city" placeholder="City"   style="width:100%;" value="<?php if(isset($_POST['city'])){echo $_POST['city'];}?>">
+							<input type="text" class="form-control" name="state" placeholder="State"  value="<?php if(isset($_POST['state'])){echo $_POST['state'];}?>" style="width:100%;">
 							<input type="text" class="form-control" name="minPrice" placeholder="$ Min" value="<?php if(isset($_POST['minPrice'])){echo $_POST['minPrice'];}?>">
 							<input type="text" class="form-control" name="maxPrice" placeholder="$ Max" value="<?php if(isset($_POST['maxPrice'])){echo $_POST['maxPrice'];}?>">
 								<select class="form-control" name="category" >
