@@ -143,6 +143,7 @@ $category = modules::run('category/get_where',$item->item_category)->result_arra
 										Tags :
 										<span class="label label-primary"><?php echo $category[0]['category_name'];?></span>
 <a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" class="btn btn-warning btn-sm pull-right">Read More</a>
+										<div class="btn btn-sm pull-right fb-share-button" data-href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" data-layout="button"></div>
 									</div>
 								</div>
 
@@ -197,3 +198,11 @@ $category = modules::run('category/get_where',$item->item_category)->result_arra
       });
     });
 </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
