@@ -121,8 +121,8 @@ $counter ++;
 
 
 
-
-<div style="padding:10px;">
+<div class="panel panel-default">
+<div class="panel-body">
 <div class="admin-body-page-name">All Products</div>
 				<?php foreach($item_list as $item){
 						$user = modules::run('user/get_where',$item->item_user_id)->result_array();
@@ -183,21 +183,22 @@ $counter ++;
 
 	
 </div>
-
-
-	</div>
-	</div>
-</div>
-
 <div class="row">
 	<div class="col-md-12">
-		<ul class="pagination pull-right">
+		<ul class="pagination pull-right" style="margin:15px;">
 			<?php for($i=1;$i<=$iteratinons;$i++){?>
                 <li <?php if($page==$i){ echo 'class="active"';}?>><a href="<?php echo BASEURL;?>marketplace/listView/<?php echo $i?>" ><?php echo $i?></a></li>
             <?php }?>
 		</ul>
 	</div>
 </div>
+
+
+	</div>
+	</div>
+</div>
+</div>
+
 
 
 </div>
