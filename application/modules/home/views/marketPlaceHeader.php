@@ -50,7 +50,7 @@ $exploded_url = explode('/',uri_string());
 				<div class="col-lg-4 col-md-3 col-sm-3 col-xs-8 ">
 					<ul class="cdTopList list-unstyled">
 						<a href="http://www.collegedrifters.com" id="collegeDriftHomeLink"><li>College<span style="color:#B4100A">Drifters</span></li></a>
-						<a data-toggle="modal" data-target=".bs-example-modal-lg" style="margin-right:0px;"><li>About</li></a>
+						<a data-toggle="modal" data-target=".bs-example-modal-lg" style="margin-right:0px;cursor:pointer;margin-top:5px;"><li>About</li></a>
 					</ul>
 
 
