@@ -1,6 +1,3 @@
-<?php
-
-?>
 <div id="advancedSearchBar" >
 <div class="container">
 
@@ -45,6 +42,15 @@
 </div>
 <div class="content">
 	<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<center><img src="<?php echo BASEURL;?>public/images/graphic-design-banner.jpg" alt="" style="width:98%;max-width:600px;padding:10px;"></center>
+		</div>
+	</div>
+
+
+
+
 		<div class="row">
 			<div class="col-md-12 col-xs-12">
 			<div class="panel panel-default">
@@ -92,8 +98,8 @@ $counter ++;
 
 <?php if(!empty($featured_item_list)){?>
 <div class="row">
-	<div class="col-md-12 col-xs-12 col-sm-12" style="padding:10px;">
-		<div class="pull-right">
+	<div class="col-md-12 col-xs-12 col-sm-12" >
+		<div class="pull-right" style="margin-right:10px;">
 			<a href="" class="btn btn-default">See More <span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
 	</div>
@@ -109,8 +115,7 @@ $counter ++;
 
 
 
-<div class="panel panel-default">
-<div class="panel-body">
+<div style="padding:10px;">
 <div class="admin-body-page-name">All Products</div>
 				<?php foreach($item_list as $item){
 						$user = modules::run('user/get_where',$item->item_user_id)->result_array();
@@ -169,10 +174,11 @@ $counter ++;
 
 
 
-	</div>
+	
 </div>
 
 
+	</div>
 	</div>
 </div>
 

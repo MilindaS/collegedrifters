@@ -21,6 +21,9 @@ class Admin extends MX_Controller {
 		$js_array = array('odometer.min.js');
 		$this->generateAdminTempalte('dash',$data,$css_array,$js_array);
 	}
+	function customAds(){
+		$this->generateAdminTempalte('customAds');
+	}
 	function stat(){
 		$this->generateAdminTempalte('statistics');
 	}

@@ -1,7 +1,10 @@
 <script>
 	$(document).ready(function(){
 		$('.stack-body').css({'min-height':$(document).outerHeight()-40});
-		$('.stack-body-nav').css({'height':$('.stack-body').height()})
+		$('.stack-body-nav').css({'min-height':$('.stack-body').outerHeight()})
+		$(document).scroll(function() {
+		  $('.stack-body-nav').css({'min-height':$('.stack-body').outerHeight()})
+		});
 	});
 </script>
 
@@ -56,6 +59,7 @@
 								<a href="<?php echo BASEURL;?>admin/categories" data-toggle="tooltip" title="Categories"><li><span class="glyphicon glyphicon-hdd"></span><span class="hidden-xs hidden-sm hidden-md ">Categories</span></li></a>
 								<a href="<?php echo BASEURL;?>admin/stat" data-toggle="tooltip" title="Statistics"><li><span class="glyphicon glyphicon-stats"></span><span class="hidden-xs hidden-sm hidden-md ">Statistics</span></li></a>
 								<a href="<?php echo BASEURL;?>admin/featuredProd" data-toggle="tooltip" title="Featured Products"><li><span class="glyphicon glyphicon-gift"></span><span class="hidden-xs hidden-sm hidden-md ">Featured Products</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/customAds" data-toggle="tooltip" title="Featured Products"><li><span class="glyphicon glyphicon-usd"></span><span class="hidden-xs hidden-sm hidden-md ">Custom Ads</span></li></a>
 							</ul>
 						</div>
 					</div>
