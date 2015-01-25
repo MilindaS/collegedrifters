@@ -48,7 +48,7 @@
 			$image_banner = is_file($banner[0]['banner_img']) ? $banner[0]['banner_img']:'public/images/graphic-design-banner.jpg';
 			
 			?>
-			<center><img src="<?php echo BASEURL.$image_banner;?>" alt="" style="width:98%;max-width:600px;padding:10px;"></center>
+			<center><a href="<?php echo $banner[0]['banner_url'];?>"><img src="<?php echo BASEURL.$image_banner;?>" alt="" style="width:98%;max-width:600px;padding:10px;"></a></center>
 			
 
 			<!-- //print_r() -->
@@ -69,10 +69,11 @@ foreach($featured_item_list as $item){
 $category = modules::run('category/get_where',$item->item_category)->result_array();
 	?>
 		<div class="col-md-3" >
+		<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" class="featured-product-a">
 			<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
 			<span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
 			<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
-
+		</a>
 		</div>
 <?php } ?>
 </div>
@@ -94,9 +95,11 @@ $counter ++;
 ?>
 
 			<div class="col-sm-6 col-xs-6" style="padding:5px;">
-			<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
-			<span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
+			<a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" class="featured-product-a">
+				<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+				<span class="label label-primary postedAdPrice featured-price">$ <?php echo $item->item_price;?></span>
 				<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="100%"  />
+			</a>
 			</div>
 <?php if($counter%$limit_ct==0){ ?>
 	</div>
