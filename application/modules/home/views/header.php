@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
 	<title>College Drifters</title>
-
-	<meta name="description" content="">
+	<meta name="description" content="The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other. By utilizing this marketplace students can inform others of events, notes, books, and tickets." />
+    <meta name="keywords" content="collegedrifters,collegedrifters marketplace,online marketplace,buy,sell,events, notes, books, tickets" />
+	
     <meta name="viewport" content="width=device-width">
+
 
     <link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/style.css">
