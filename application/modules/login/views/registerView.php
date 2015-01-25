@@ -130,8 +130,8 @@
 
   <div class="form-group" >
   
-	<b style="font-size:12px;float:left;margin-top:10px;width:100%;margin-left:120px;">
-	Already on CollegeDrifters ? <a href="<?php echo BASEURL;?>login/loginView">Sign in</a>
+	<b style="font-size:12px;float:left;margin-top:10px;width:100%;">
+	<center>Already on CollegeDrifters ? <a href="<?php echo BASEURL;?>login/loginView">Sign in</a></center>
 	</b>
 
   </div>
