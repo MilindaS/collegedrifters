@@ -44,7 +44,14 @@
 	<div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<center><img src="<?php echo BASEURL;?>public/images/graphic-design-banner.jpg" alt="" style="width:98%;max-width:600px;padding:10px;"></center>
+			<?php $banner = modules::run('banner/get_where',1)->result_array();
+			$image_banner = is_file($banner[0]['banner_img']) ? $banner[0]['banner_img']:'public/images/graphic-design-banner.jpg';
+			
+			?>
+			<center><img src="<?php echo BASEURL.$image_banner;?>" alt="" style="width:98%;max-width:600px;padding:10px;"></center>
+			
+
+			<!-- //print_r() -->
 		</div>
 	</div>
 
@@ -100,7 +107,7 @@ $counter ++;
 <div class="row">
 	<div class="col-md-12 col-xs-12 col-sm-12" >
 		<div class="pull-right" style="margin-right:10px;">
-			<a href="" class="btn btn-default">See More <span class="glyphicon glyphicon-chevron-right"></span></a>
+			<a href="" class="btn btn-default" style="display:none;">See More <span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
 	</div>
 </div>

@@ -11,6 +11,7 @@ class Admin extends MX_Controller {
 		$this->load->module('user');
 		$this->load->module('category');
 		$this->load->module('item');
+
 	}
 
 	function dash(){
@@ -22,7 +23,11 @@ class Admin extends MX_Controller {
 		$this->generateAdminTempalte('dash',$data,$css_array,$js_array);
 	}
 	function customAds(){
-		$this->generateAdminTempalte('customAds');
+		$css_array = array('bootstrapValidator.css','datepicker.css');
+		$js_array = array('bootstrapValidator.min.js','jquery.form.js');
+		$this->load->module('banner');
+		$data['banner_data'] = $this->banner->get('banner_id')->result();
+		$this->generateAdminTempalte('customAds',$data,$css_array,$js_array);
 	}
 	function stat(){
 		$this->generateAdminTempalte('statistics');
@@ -30,6 +35,13 @@ class Admin extends MX_Controller {
 	function pages(){
 		$data['page_name'] = 'Pages';
 		$this->generateAdminTempalte('pages',$data);
+	}
+	function editBannerPopup(){
+		$banner_id =$_POST['id'];
+		$this->load->module('banner');
+		$banner_data = $this->banner->get_where($banner_id)->result();
+		$data = json_encode($banner_data);
+		echo $data;
 	}
 	function categories($page=null){
 		$per_page_user = 7;

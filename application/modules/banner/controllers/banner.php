@@ -6,7 +6,9 @@ class Banner extends MX_Controller {
 		parent::__construct();
 		$this->load->model('mdl_banner');
 	}
-
+	function save(){
+		$this->mdl_banner->save();
+	}
 	function get($order_by){
 
 		$query = $this->mdl_banner->get($order_by);
