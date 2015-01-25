@@ -91,9 +91,9 @@
 
 							<br />
 							<div class="row">
-								<div class="col-md-12">
-									<strong>Call Us</strong>
-									<p style="margin:5px;">7692161007 </p>
+								<div class="col-md-12" >
+									<strong style="display:none;">Call Us</strong>
+									<p style="margin:5px;display:none;">7692161007 </p>
 									<p><small>(college drifters support hotline for issues regarding stress, bullying, crime, financial aid concerns, etc)
 									</small></p>
 								</div>
@@ -106,9 +106,9 @@
 									<strong>Follow us</strong>
 
 									<ul class="list-unstyled" style="margin:5px;line-height:24px;">
-										<li>&nbsp;&nbsp;<a href="https://www.facebook.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/facebook.png"  style="width:18px;" alt="" />&nbsp;&nbsp; Meet us at Facebook</a></li>
-										<li>&nbsp;&nbsp;<a href="https://twitter.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/twitter.png"  style="width:18px;" alt="" />&nbsp;&nbsp; Meet us at Twitter</a></li>
-										<li>&nbsp;&nbsp;<a href="http://instagram.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/instagram.png"  style="width:18px;" alt="" />&nbsp;&nbsp; Meet us at Instagram</a></li>
+										<li>&nbsp;&nbsp;<a href="https://www.facebook.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/facebook.png"  style="width:18px;" alt="" />&nbsp;&nbsp; Meet us @ Facebook</a></li>
+										<li>&nbsp;&nbsp;<a href="https://twitter.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/twitter.png"  style="width:18px;" alt="" />&nbsp;&nbsp; Meet us @ Twitter</a></li>
+										<li>&nbsp;&nbsp;<a href="http://instagram.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/instagram.png"  style="width:18px;" alt="" />&nbsp;&nbsp; Meet us @ Instagram</a></li>
 									</ul>
 								</div>
 							</div>
