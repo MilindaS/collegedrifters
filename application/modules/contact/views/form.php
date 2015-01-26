@@ -90,14 +90,14 @@
 							</div>
 
 							<br />
-							<div class="row">
+							<!-- <div class="row">
 								<div class="col-md-12" >
 									<strong style="display:none;">Call Us</strong>
 									<p style="margin:5px;display:none;">7692161007 </p>
 									<p><small>(college drifters support hotline for issues regarding stress, bullying, crime, financial aid concerns, etc)
 									</small></p>
 								</div>
-							</div>
+							</div> -->
 							<br />
 
 
