@@ -41,7 +41,9 @@ a:active{
 	background:rgba(0,0,0,0.5);
 
 }
-
+.cdLogin .panel-body{
+	border: 1px solid #DDD;
+}
 .blendBackground{
 	height:100%;
 	width:100%;
