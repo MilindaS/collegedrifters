@@ -19,7 +19,7 @@ class Marketplace extends MX_Controller {
 		$page = $page*$per_page_item;
 
 		$total_items = $this->mdl_marketplace->getItemCount();
-		echo $total_items;
+		
 		$data['iteratinons'] = ceil(($total_items/$per_page_item));
 
 		$data['item_list'] = $this->mdl_marketplace->getCustomList($per_page_item,$page);
