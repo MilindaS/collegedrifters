@@ -114,9 +114,20 @@ class Admin extends MX_Controller {
 		$data = json_encode($category_data);
 		echo $data;
 	}
+	function deleteUserPopup(){
+		$user_id =$_POST['id'];
+		$user_data = $this->user->get_where($user_id)->result();
+		$data = json_encode($user_data);
+		echo $data;
+	}
 	function deleteCategorySave(){
 		$category_id =$_POST['id'];
 		$this->category->_delete($category_id);
+		return true;
+	}
+	function deleteUserSave(){
+		$user_id =$_POST['id'];
+		$this->user->_delete($user_id);
 		return true;
 	}
 	function deleteItem(){

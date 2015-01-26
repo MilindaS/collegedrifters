@@ -18,11 +18,11 @@ class Marketplace extends MX_Controller {
 		$page = ($page!=null) ? ($page-1) : 0;
 		$page = $page*$per_page_item;
 
-		$total_items = $this->item->count_all();
-
+		$total_items = $this->mdl_marketplace->getItemCount();
+		echo $total_items;
 		$data['iteratinons'] = ceil(($total_items/$per_page_item));
 
-		$data['item_list'] = $this->item->get_with_limit($per_page_item,$page,'item_id')->result();
+		$data['item_list'] = $this->mdl_marketplace->getCustomList($per_page_item,$page);
 	 	
 	 	$data['featured_item_list'] = $this->item->_custom_query("SELECT * from tb_items WHERE item_type=2 ORDER BY item_id DESC LIMIT 0,4 ")->result();
 

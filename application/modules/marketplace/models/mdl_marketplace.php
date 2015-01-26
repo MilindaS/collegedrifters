@@ -5,6 +5,16 @@ class Mdl_marketplace extends CI_Model {
 	function __construct(){
 		parent::__construct();
 	}
+	public function getCustomList($per_page_item,$page){
+		$sql = "SELECT * FROM tb_items
+					INNER JOIN tb_users
+					ON tb_items.item_user_id = tb_users.user_id
+					WHERE tb_items.item_type = ? ORDER BY tb_items.item_created_date DESC LIMIT ?, ?
+					";
+		$params = array(0,$page,$per_page_item);
+		$query = $this->db->query($sql,$params);
+		return $query->result();
+	}
 
 	public function getItemList($page,$item_type=null){
 		$counter = 5;
@@ -64,13 +74,11 @@ public function getFeaturedItemList($page,$item_type=null){
 	}
 	public function getItemCount(){
 		$sql = "SELECT * FROM tb_items
-					INNER JOIN tb_categories
-					ON tb_items.item_category = tb_categories.category_id
 					INNER JOIN tb_users
-					ON tb_items.item_user_id = tb_users.user_id ORDER BY tb_items.item_created_date DESC
+					ON tb_items.item_user_id = tb_users.user_id WHERE tb_items.item_type = 0
 					";
 		$query = $this->db->query($sql);
-		return $query->num_rows()/5;
+		return $query->num_rows();
 	}
 	public function getLocalItemCount(){
 		$sql = "SELECT * FROM tb_items
