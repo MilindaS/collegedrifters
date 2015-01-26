@@ -13,7 +13,7 @@
 		
 		<div class="row">
 			<div class="col-xs-12">
-				<h2 style="color:#0B5371;padding:0px;margin:5px;font-weight:bold;">My Profile</h2><a href="<?php echo BASEURL;?>profile/edit/<?php echo $this->user['user_id'];?>" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit Information</a>
+				<h3 style="color:#53335E;padding:0px;margin:5px;font-weight:bold;">My Profile</h3><a href="<?php echo BASEURL;?>profile/edit/<?php echo $this->user['user_id'];?>" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit Information</a>
 			</div>
 		</div>
 		<div class="row">

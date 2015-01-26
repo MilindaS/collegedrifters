@@ -13,7 +13,7 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<h2 style="color:#0B5371;padding:0px;margin:5px;font-weight:bold;">Post Item</h2>
+				<h3 style="color:#53335E;padding:0px;margin:5px;font-weight:bold;">Post Item</h3>
 			</div>
 		</div>
 
