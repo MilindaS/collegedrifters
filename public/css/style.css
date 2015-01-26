@@ -56,8 +56,7 @@ a:active{
 #tagText
 {
 	font-size:20px;
-	color:#cecece;
-	text-shadow:1px 1px #000000;
+	color:#000000;
 }
 
 .welcomeCont{
@@ -65,11 +64,13 @@ a:active{
 	background:none;
 }
 .cdTopLinkBar{
+	margin-top: 5px;
 	width:100%;background:rgba(255,255,255,1);padding:10px 0px 5px 0px;
 	box-shadow:0px 0px 5px rgba(255,255,255,0.7)
 }
 .cdTopLinkBarForMarket{
-	padding:10px 0px 5px 0px;background:#FFF;border-bottom:1px solid #BD82BD;
+	margin-top: 5px;
+	padding:10px 0px 5px 0px;background:#FFF;border-bottom:1px solid #FFFFFF;
 }
 .cdTopLinkBarForMarket ul li a,.cdTopLinkBarForMarket ul li,.cdTopLinkBarForMarket ul a li {
 	color:black;
@@ -78,7 +79,7 @@ a:active{
 	color:black;
 }
 .cdTopSiteNameBar{
-	width:100%;background:#0C2E51;padding:5px 0px;
+	width:100%;background:#FFFFFF;padding:5px 0px;
 }
 .cdBtn{
 	margin-top:20px;
@@ -157,8 +158,9 @@ color:#E5F0FB;
 	margin-top:20px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #DEECFA;
-	background:#0F3C69;
+    color: #444444;
+	background:#FFFFFF;
+	border:1px solid #AAAAAA;
 	border-radius:4px;
 	margin:4px;
 	padding:8px 12px;
@@ -167,30 +169,29 @@ color:#E5F0FB;
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color: #081D32;
-	box-shadow:0px 0px 2px black inset;
-	border-bottom:1px solid #15518D;
+    color: #444444;
+    background-color: #FFFFFF;
+	border:1px solid #AAAAAA;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color:#185DA2;
-	color:#DEECFA	;
+    background-color:#EEEEEE;
+	color:#222222	;
 }
 
 .navbar-default .navbar-toggle {
-    background:#124476;
+    background:#FFFFFF;
 	border:none;
 	margin-top:20px;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #175695;
+    background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #DEECFA;
+    background-color: #555555;
 }
 
 
@@ -306,22 +307,23 @@ color:#E5F0FB;
 }
 
 #advancedSearchBar{
-	border-top:1px solid #1F77CF;
-	border-bottom:1px solid #7F8FA7;
-	background:#445164;
+	border-top:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	background:#FFFFFF;
 
 }
 #advancedSearchBar .navbar-header .glyphicon-search{
 	color:#E45F56;margin-right:-12px;
 }
 #advancedSearchBar .navbar-brand{
-	color:#AAB2C4;
+	color:#666666;
 	font-size:16px;
+	
 
 }
 #advancedSearchBar	button[type='submit']{
-		float:right;background:#16ABE3;color:#353535;border:none;font-weight:bold;
-	border-bottom:1px solid #111;
+		float:right;background:#FFFFFF;color:#353535;border:1px solid #AAAAAA;font-weight:bold;
+	
 
 
 	font-size:15px;
@@ -358,7 +360,7 @@ color:#E5F0FB;
 	padding:10px 0px;
 	font-family: "Lato",Calibri,Arial,sans-serif;
 	font-size: 15px;
-
+	background: #FFFFFF;
 }
 .content p{
 line-height:18px;

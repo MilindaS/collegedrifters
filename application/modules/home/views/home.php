@@ -1,4 +1,4 @@
-<div class="marketBackground"></div>
+<!-- <div class="marketBackground"></div> -->
 
 <div class="cdTopLinkBar">
 		<div class="container-fluid">
@@ -69,6 +69,7 @@
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" style="padding:10px;">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>	
       <img src="<?php echo BASEURL;?>public/images/logo.png" alt="" style="width:100%;max-width:200px;" />
 	  <p style="padding:40px 10px;">
 		The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other. 

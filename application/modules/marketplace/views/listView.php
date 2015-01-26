@@ -2,7 +2,7 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12" style="border:1px solid #DDD;">
 
 					<div class="navbar-header">
 					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#searchContetn" >
