@@ -66,10 +66,15 @@ class Marketplace extends MX_Controller {
 	}
 
 	public function itemView($item_id){
-
+		$meta_og_array = array(
+	 		array('property'=>"og:title",'content'=>'College Drifters'),
+	 		array('property'=>"og:url",'content'=>BASEURL.'marketplace/itemView/'.$item_id),
+	 		array('property'=>"og:description",'content'=>'The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other. By utilizing this marketplace students can inform others of events, notes, books, and tickets.'),
+	 		array('property'=>"og:image",'content'=>BASEURL.'public/images/logo.png'),
+	 		);
 		$this->item = $this->mdl_marketplace->getItem($item_id);
 		$this->category_array = $this->mdl_marketplace->getCategory();
-		$this->home->marketPlaceHeader();
+		$this->home->marketPlacePublicHeader('','','',$meta_og_array);
 		$this->load->view('itemView');
 		$this->home->marketPlaceFooter();
 	}

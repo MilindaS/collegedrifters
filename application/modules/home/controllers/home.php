@@ -34,6 +34,13 @@ class Home extends MX_Controller {
 		$data['meta_og_array'] = $meta_og_array;
 		$this->load->view('marketPlaceHeader',$data);
 	}
+	public function marketPlacePublicHeader($css_array=null,$js_array=null,$meta_array=null,$meta_og_array=null){
+		$data['css_array'] = $css_array;
+		$data['js_array'] = $js_array;
+		$data['meta_array'] = $meta_array;
+		$data['meta_og_array'] = $meta_og_array;
+		$this->load->view('marketPlacePublicHeader',$data);
+	}
 
 	public function marketPlaceFooter(){
 		$this->load->view('marketPlaceFooter');
