@@ -7,6 +7,7 @@ class Home extends MX_Controller {
 		$meta_og_array = array(
 	 		array('property'=>"og:title",'content'=>'College Drifters'),
 	 		array('property'=>"og:url",'content'=>BASEURL),
+	 		array('property'=>"og:type",'content'=>'website'),
 	 		array('property'=>"og:description",'content'=>'The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other. By utilizing this marketplace students can inform others of events, notes, books, and tickets.'),
 	 		array('property'=>"og:image",'content'=>BASEURL.'public/images/logo.png'),
 	 		);

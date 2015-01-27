@@ -37,6 +37,7 @@ class Marketplace extends MX_Controller {
 	 	$meta_og_array = array(
 	 		array('property'=>"og:title",'content'=>'College Drifters Item List'),
 	 		array('property'=>"og:url",'content'=>BASEURL.'marketplace/listView'),
+	 		array('property'=>"og:type",'content'=>'website'),
 	 		array('property'=>"og:description",'content'=>'College Drifters Item List'),
 	 		array('property'=>"og:image",'content'=>BASEURL.'public/images/logo.png'),
 	 		);
@@ -66,16 +67,20 @@ class Marketplace extends MX_Controller {
 	}
 
 	public function itemView($item_id){
+		$this->item = $this->mdl_marketplace->getItem($item_id);
+		$description = ($this->item['item_description']) ? $this->item['item_description'] : "The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other.";
+		$image = ($this->item['item_image']) ? $this->item['item_image'] : 'public/images/logo.png';
 		$meta_og_array = array(
 	 		array('property'=>"og:title",'content'=>'College Drifters'),
 	 		array('property'=>"og:url",'content'=>BASEURL.'marketplace/itemView/'.$item_id),
-	 		array('property'=>"og:description",'content'=>'The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other. By utilizing this marketplace students can inform others of events, notes, books, and tickets.'),
-	 		array('property'=>"og:image",'content'=>BASEURL.'public/images/logo.png'),
+	 		array('property'=>"og:type",'content'=>	'website'),
+	 		array('property'=>"og:description",'content'=>$description),
+	 		array('property'=>"og:image",'content'=>BASEURL.$image),
 	 		);
 		$this->item = $this->mdl_marketplace->getItem($item_id);
 		$this->category_array = $this->mdl_marketplace->getCategory();
 		if($this->session->userdata('logged_in')){
-			$this->home->marketPlaceHeader();
+			$this->home->marketPlaceHeader('','','',$meta_og_array);
 		}else{
 			$this->home->marketPlacePublicHeader('','','',$meta_og_array);
 		}
