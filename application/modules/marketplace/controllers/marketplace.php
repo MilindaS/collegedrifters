@@ -70,8 +70,9 @@ class Marketplace extends MX_Controller {
 		$this->item = $this->mdl_marketplace->getItem($item_id);
 		$description = ($this->item['item_description']) ? $this->item['item_description'] : "The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other.";
 		$image = ($this->item['item_image']) ? $this->item['item_image'] : 'public/images/logo.png';
+		$title = ($this->item['item_name']) ? $this->item['item_name'] : 'College Drifters';
 		$meta_og_array = array(
-	 		array('property'=>"og:title",'content'=>'College Drifters'),
+	 		array('property'=>"og:title",'content'=>$title),
 	 		array('property'=>"og:url",'content'=>BASEURL.'marketplace/itemView/'.$item_id),
 	 		array('property'=>"og:type",'content'=>	'website'),
 	 		array('property'=>"og:description",'content'=>$description),
