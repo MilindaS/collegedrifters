@@ -81,7 +81,7 @@
 <a href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" class="btn btn-warning btn-sm pull-right">Read More</a>
 										<!-- <div class="btn btn-sm pull-right fb-share-button" data-href="<?php //echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" data-layout="button"></div> -->
 										<div class="fb-share-button btn btn-sm pull-right" data-href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" data-layout="button_count"></div>
-										<a href="https://twitter.com/share" class="twitter-share-button pull-right" data-url="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" data-count="none">Tweet</a>
+										<a href="https://twitter.com/share" class="twitter-share-button pull-right" data-url="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item['item_id'];?>" >Tweet</a>
 									</div>
 								</div>
 
