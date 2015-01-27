@@ -81,7 +81,7 @@ $exploded_url = explode('/',uri_string());
 				<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
 
 
-					<div class="pull-right">Signin
+					<div class="pull-right"><a href="<?php echo BASEURL;?>login/loginView">Sign in</a>
 
 					</div>
 				</div>
