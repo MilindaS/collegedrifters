@@ -56,6 +56,45 @@
 			?>
 		</div>
 	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-md-offset-3 col-md-6">
+		
+		  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators" style="bottom:-10px;">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				 
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				  <?php $slider = modules::run('slider/get','slide_id')->result();
+				  $counter = 1;
+				  foreach ($slider as $slide) {
+				  	
+				  
+				  ?>
+				    <div class="item <?php if($counter==1){echo 'active';}?>">
+				      <img src="<?php echo BASEURL.$slide->slide_img;?>" alt="..." width="100%" style="height:100px;">
+				      <div class="carousel-caption">
+				          <h3 style="position:relative;top:40px;color:black;"><?php echo $slide->slide_caption;?></h3>
+				      </div>
+				    </div>
+				    
+				    <?php   $counter ++; } ?>
+				  </div>
+				 
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div> <!-- Carousel -->
+		</div>
+	</div>
 </div>
 
 

@@ -60,6 +60,7 @@
 								<a href="<?php echo BASEURL;?>admin/stat" data-toggle="tooltip" title="Statistics"><li><span class="glyphicon glyphicon-stats"></span><span class="hidden-xs hidden-sm hidden-md ">Statistics</span></li></a>
 								<a href="<?php echo BASEURL;?>admin/featuredProd" data-toggle="tooltip" title="Featured Products"><li><span class="glyphicon glyphicon-gift"></span><span class="hidden-xs hidden-sm hidden-md ">Featured Products</span></li></a>
 								<a href="<?php echo BASEURL;?>admin/customAds" data-toggle="tooltip" title="Featured Products"><li><span class="glyphicon glyphicon-usd"></span><span class="hidden-xs hidden-sm hidden-md ">Custom Ads</span></li></a>
+								<a href="<?php echo BASEURL;?>admin/featuredSch" data-toggle="tooltip" title="Featured Products"><li><span class="glyphicon glyphicon-sound-stereo"></span><span class="hidden-xs hidden-sm hidden-md ">Featured Schools</span></li></a>
 							</ul>
 						</div>
 					</div>

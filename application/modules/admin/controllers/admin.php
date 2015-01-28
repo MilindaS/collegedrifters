@@ -22,6 +22,13 @@ class Admin extends MX_Controller {
 		$js_array = array('odometer.min.js');
 		$this->generateAdminTempalte('dash',$data,$css_array,$js_array);
 	}
+	function featuredSch(){
+		$css_array = array('bootstrapValidator.css','datepicker.css');
+		$js_array = array('bootstrapValidator.min.js','jquery.form.js');
+		$this->load->module('slider');
+		$data['slide_data'] = $this->slider->get('slide_id')->result();
+		$this->generateAdminTempalte('featuredSch',$data,$css_array,$js_array);
+	}
 	function customAds(){
 		$css_array = array('bootstrapValidator.css','datepicker.css');
 		$js_array = array('bootstrapValidator.min.js','jquery.form.js');
@@ -40,6 +47,13 @@ class Admin extends MX_Controller {
 		$banner_id =$_POST['id'];
 		$this->load->module('banner');
 		$banner_data = $this->banner->get_where($banner_id)->result();
+		$data = json_encode($banner_data);
+		echo $data;
+	}
+	function editSliderPopup(){
+		$slide_id =$_POST['id'];
+		$this->load->module('slider');
+		$banner_data = $this->slider->get_where($slide_id)->result();
 		$data = json_encode($banner_data);
 		echo $data;
 	}
