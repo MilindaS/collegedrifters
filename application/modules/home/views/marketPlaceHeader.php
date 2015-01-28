@@ -99,7 +99,7 @@ $exploded_url = explode('/',uri_string());
 							</a>
 							<ul class="dropdown-menu" role="menu">
 							<li><a href="<?php echo BASEURL;?>profile/view"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Profile</a></li>
-								<?php if($session_data['usertype']==2){?><li><a href="<?php echo BASEURL;?>admin/dash"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;Dashboard</a></li><?php } ?>
+								<?php if($session_data['usertype']==1){?><li><a href="<?php echo BASEURL;?>admin/dash"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;Dashboard</a></li><?php } ?>
 								<li><a href="<?php echo BASEURL;?>login/logout"><span class="glyphicon glyphicon-log-out" ></span>&nbsp;&nbsp;&nbsp;Logout</a></li>
 							</ul>
 					</div>

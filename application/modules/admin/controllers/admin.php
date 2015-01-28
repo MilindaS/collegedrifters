@@ -5,6 +5,8 @@ class Admin extends MX_Controller {
 	function __construct(){
 		parent::__construct();
 		if(!$this->session->userdata('logged_in')){	redirect(BASEURL.'login/loginView', 'refresh');}
+		$session_data = $this->session->userdata('logged_in');
+		if($session_data['usertype']!=1){redirect(BASEURL.'marketplace/listView', 'refresh');}
 
 		$this->load->model('mdl_admin');
 		$this->load->module('home');
