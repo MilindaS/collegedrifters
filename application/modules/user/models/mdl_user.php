@@ -27,7 +27,7 @@ class Mdl_user extends CI_Model {
 				);
 			   $this->session->set_userdata('logged_in', $sess_array);
 			}
-			if($row->user_type=="2"){
+			if($row->user_type=="1"){
 				redirect(BASEURL.'admin/dash');
 			}
 			else{
