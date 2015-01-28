@@ -2,7 +2,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                   <li><a href="<?php echo BASEURL;?>admin/dash">Dash</a></li>
-                  <li class="active">Featured School</li>
+                  <li class="active">Featured Schools</li>
                 </ol>
             </div>
         </div>
@@ -10,7 +10,7 @@
 <div class="col-md-12">
 <div class="panel panel-default admin-body" >
   <div class="panel-body">
-  <div class="admin-body-page-name">Featured School Slider</div>
+  <div class="admin-body-page-name">Featured Schools Slider</div>
     <table class="table table-striped">
 		<thead>
         	<tr class="active" >

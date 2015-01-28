@@ -86,21 +86,22 @@
 		  			<div class="row">
 		  				<div class="col-md-4 col-sm-12 col-xs-12">
 		  					<div id="get-started">Get Started</div>
-		  					<div class="btn btn-primary btn-lg" id="visit-marketplace-button">Visit Marketplace</div>
+		  					<a class="btn btn-primary btn-lg" id="visit-marketplace-button" href="<?php echo BASEURL."marketplace/listView";?>">Visit Marketplace</a>
 		  				</div>
 		  				<div class="col-md-4 col-sm-12 col-xs-12">
-		  					<div id="get-started-action">Actions</div>
+		  					<div id="get-started-action">Quick Actions</div>
 		  					<div id="action-content">
 		  						<ul class="list-group">
-		  							<li><span class="glyphicon glyphicon-book"></span><a href="">
-		  								 Edit Pages
-		  							</a></li>
-		  							<li><span class="glyphicon glyphicon-user"></span><a href="">
+		  							<li><span class="glyphicon glyphicon-user"></span><a href="<?php echo BASEURL?>admin/users">
 		  								 Manage Users
 		  							</a></li>
-		  							<li><span class="glyphicon glyphicon-heart-empty"></span><a href="">
+		  							<li><span class="glyphicon glyphicon-heart-empty"></span><a href="<?php echo BASEURL?>admin/smlinks">
 		  								 Edit Social Media Links
 		  							</a></li>
+		  							<li><span class="glyphicon glyphicon-hdd"></span><a href="<?php echo BASEURL?>admin/categories">
+		  								 Edit Categories
+		  							</a></li>
+		  							
 		  						</ul>
 		  					</div>
 		  				</div>
