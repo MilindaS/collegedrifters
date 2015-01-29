@@ -11,6 +11,7 @@
 <div class="panel panel-default admin-body" >
   <div class="panel-body">
   <div class="admin-body-page-name">Featured Schools Slider</div>
+     <div class="admin-body-page-sub-name">Slider <button type="button" class="btn add" id="add_slide_new_btn">Add New</button></div>
     <table class="table table-striped">
 		<thead>
         	<tr class="active" >
@@ -30,6 +31,7 @@
                  <td class="hidden-xs"><?php echo $slider->slide_caption;?></td>
                 <td>
 					<button type="button" class="btn edit slider_edit" id="<?php echo $slider->slide_id;?>">Edit</button>
+          <button type="button" class="btn delete slider_delete" id="<?php echo $slider->slide_id;?>">Delete</button>
             	</td>
             </tr>
             <?php } ?>
@@ -62,7 +64,44 @@
                   }
                 );
         });
+        $('#add_slide_new_btn').click(function(){
+          $("#preview").html('');
+          $('#change_type').html('Add');
+          $('#slide_caption').val('');
+          $('#slide_url').val('');
+          $('#slider_modal').modal('show')
+        });
+        $('.slider_delete').click(function(){
+            $.post("<?php echo BASEURL;?>admin/editSliderPopup",
+                  {
+                    id:$(this).attr('id'),
+                  },
+                  function(data,status){
+                    //alert("Data: " + data + "\nStatus: " + status);
+                    data = $.parseJSON(data)[0];
+                    //console.log(data);
+                    $('#slider_del_name').html('<img src="<?php echo BASEURL."'+data.slide_img+'"?>" alt="" width="100%"/>');
+                    $('#slider_del_id').val(data.slide_id);
 
+                    //$('#smlink_url').val(data.smlinks_url);
+                    $('#slider_modal_del').modal('show')
+                  }
+                );
+        });
+
+          $('#delete_slide_cnfm').click(function(){
+            var item_del_id = $('#slider_del_id').val();
+
+            $.post("<?php echo BASEURL;?>admin/deleteSlide",
+                    {
+                      id:item_del_id
+                    },
+                    function(data,status){
+                      $('#slider_modal_del').modal('hide');
+                      window.location.reload(true);
+                    }
+                  );
+          });
     });
 
 
@@ -70,7 +109,26 @@
 
 
 
-
+<form class="form-horizontal" id="slider_form_del">
+<div class="modal fade" id="slider_modal_del">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Are you really sure about delete this!</h4>
+      </div>
+      <div class="modal-body">
+        <div id="slider_del_name"></div>
+      </div>
+      <input type="hidden" id="slider_del_id">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id="delete_slide_cnfm">Delete</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</form>
 
 
 
@@ -83,7 +141,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit Custom Ad</h4>
+        <h4 class="modal-title"><span id="change_type">Edit</span> Custom Ad</h4>
       </div>
       <div class="modal-body">
           <div class="form-group">

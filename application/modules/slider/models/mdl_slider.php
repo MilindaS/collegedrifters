@@ -37,10 +37,17 @@ class Mdl_slider extends CI_Model {
 			$this->recursiveRemoveDirectory('public/uploads/temp/',$item_user_id.'_');
 
 			$data_banner = array('slide_img'=>$slide_img);
-			$this->_update($slide_id,$data_banner);
+			if($slide_id!="" || !is_null($slide_id)){
+				$this->_update($slide_id,$data_banner);
+			}
 		}
 		$data = array('slide_url'=>$slide_url,'slide_caption'=>$slide_caption);
-		$this->_update($slide_id,$data);
+		if($slide_id!="" || !is_null($slide_id)){
+			$this->_update($slide_id,$data);
+		}else{
+			$this->_insert($data);
+			$this->_update($this->db->insert_id(),$data_banner);
+		}
 		redirect(BASEURL.'admin/featuredSch');
 	}
 	public function recursiveRemoveDirectory($directory,$pattern)

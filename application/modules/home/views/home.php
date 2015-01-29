@@ -62,9 +62,14 @@
 		  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				  <!-- Indicators -->
 				  <ol class="carousel-indicators" style="bottom:-10px;">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				   <?php $slider = modules::run('slider/get','slide_id')->result();
+				  $counter = 0;
+				  foreach ($slider as $slide) {
+				  	
+				  
+				  ?>
+				    <li data-target="#carousel-example-generic" data-slide-to="<?php echo $counter;?>" class="<?php if($counter==0){echo 'active';}?>"></li>
+				     <?php   $counter ++; } ?>
 				  </ol>
 				 
 				  <!-- Wrapper for slides -->

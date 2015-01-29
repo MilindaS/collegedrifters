@@ -151,6 +151,12 @@ class Admin extends MX_Controller {
 		$this->item->_delete($item_id);
 		return true;
 	}
+	function deleteSlide(){
+		$slide_id =$_POST['id'];
+		$this->load->module('slider');
+		$this->slider->_delete($slide_id);
+		return true;
+	}
 	function editSmlinksSave(){
 		$smlinks_id = $_POST['smlinks_id'];
 		$smlink_url = $_POST['smlink_url'];
