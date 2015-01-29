@@ -69,18 +69,7 @@
 	<div class="col-md-12">
 		<div class="panel panel-default admin-dash-snippet">
 		  <div class="panel-body">
-		  	<div class="row">
-		  		<div class="col-md-12">
-
-		  		<div class="admin-customize-snippet-title">
-		  			Customize
-		  		</div>
-		  		<div class="admin-customize-snippet-sub-title">
-		  			Here is some shortcuts to manage site
-		  			</div>
-		  	</div>
-		  	</div>
-
+		  	
 		  	<div class="row" id="get-start-init">
 		  		<div class="col-md-12">
 		  			<div class="row">
