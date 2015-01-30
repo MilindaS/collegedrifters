@@ -48,7 +48,9 @@ class Mdl_slider extends CI_Model {
 			$this->_update($slide_id,$data);
 		}else{
 			$this->_insert($data);
-			$this->_update($this->db->insert_id(),$data_banner);
+			if($data_banner!=""){
+				$this->_update($this->db->insert_id(),$data_banner);
+			}
 		}
 		redirect(BASEURL.'admin/featuredSch');
 	}
