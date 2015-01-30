@@ -210,13 +210,7 @@ $('#defaultForm').bootstrapValidator({
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-        slide_caption: {
-                validators: {
-                    notEmpty: {
-                        message: 'Slide Caption'
-                    }
-                }
-            },
+        
             slide_url: {
                 validators: {
                     notEmpty: {

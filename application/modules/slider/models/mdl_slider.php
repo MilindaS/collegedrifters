@@ -14,6 +14,7 @@ class Mdl_slider extends CI_Model {
 		$slide_img = null;
 		$slide_id = null;
 		$slide_url = null;
+		$slide_caption = "";
 		$session_data = $this->session->userdata('logged_in');
 		$item_user_id = $session_data['id'];
 
