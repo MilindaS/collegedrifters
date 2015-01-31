@@ -7,7 +7,7 @@ class Login extends MX_Controller {
 		session_start();
 		$this->load->module('home');
 	}
-	
+
 	public function loginView($errorLogin=null)
 	{
 
@@ -50,11 +50,10 @@ class Login extends MX_Controller {
 		$this->home->footer();
 	}
 
-	function logout()
+	public function logout()
 	{
-		$this->session->unset_userdata('logged_in');
-		session_destroy();
-		redirect(BASEURL.'login/loginView', 'refresh');
+		$this->load->module('user');
+		$this->user->doLogout();
 	}
 
 	public function activate($user_id=null,$user_notification=null){

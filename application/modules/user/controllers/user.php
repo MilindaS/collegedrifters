@@ -10,7 +10,9 @@ class User extends MX_Controller {
 	public function doLogin(){
 		$this->mdl_user->doLogin();
 	}
-
+	public function doLogout(){
+		$this->mdl_user->doLogout();	
+	}
 	public function doRegister(){
 		$this->mdl_user->doRegister();
 	}

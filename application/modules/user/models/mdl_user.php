@@ -23,9 +23,11 @@ class Mdl_user extends CI_Model {
 				$sess_array = array(
 					'id' => $row->user_id,
 					'username' => $row->user_firstName,
+					'key' => intval(microtime(true)),
 					'usertype'=>$row->user_type,
 				);
 			   $this->session->set_userdata('logged_in', $sess_array);
+			   modules::run('loginlogger/track','login');
 			}
 			if($row->user_type=="1"){
 				redirect(BASEURL.'admin/dash');
@@ -41,7 +43,12 @@ class Mdl_user extends CI_Model {
 
 
 	}
-
+	public function doLogout(){
+		modules::run('loginlogger/track','logout');
+		$this->session->unset_userdata('logged_in');
+		session_destroy();
+		redirect(BASEURL.'login/loginView', 'refresh');
+	}
 	public function doRegister(){
 		//print_r($_POST);
 			$user_firstName = null;
