@@ -2,7 +2,7 @@
 	<div class="col-md-3">
 		<div class="panel panel-default admin-dash-snippet">
 		  <div class="panel-body">
-		  <div id="total-visitor-snippet-title">TOTAL HITS</div>
+		  <div id="total-visitor-snippet-title">UINQUE USERS</div>
 		   <div id="total-visitor-to-date"><?php echo date('Y-m-d H:i');?> </div>
 		   <div id="total-visitor-count"  class="odometer"><center>0</center></div>
 		  </div>
@@ -118,7 +118,7 @@
 <script>
 
 setTimeout(function(){
-    $('.odometer').html(<?php echo count(modules::run('tracking/allHits'));?>);
+    $('.odometer').html(<?php echo count(modules::run('tracking/uniqueTracking'));?>);
   }, 500);
 
 $(document).ready(function(){
