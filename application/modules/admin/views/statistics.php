@@ -118,7 +118,7 @@ $array_logger_auth = modules::run('loginlogger/_custom_query',$query_logger_auth
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="panel panel-default admin-dash-snippet">
           <div class="panel-body table-responsive" style="height:200px;overflow-y:scroll;">
-          <div id="total-visitor-snippet-title">Last 5 Marketplace Users</div>
+          <div id="total-visitor-snippet-title">Marketplace Users</div>
            <table class="table table-striped" >
              <thead>
                <tr>
