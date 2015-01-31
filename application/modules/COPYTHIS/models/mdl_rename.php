@@ -39,7 +39,12 @@ class Mdl_rename extends CI_Model {
 		$query = $this->db->get($table);
 		return $query;
 	}
-	
+	function get_group_by($col){
+		$table = $this->get_table();
+		$this->db->group_by($col); 
+		$query = $this->db->get($table);
+		return $query;
+	}
 	function _insert($data){
 		$table = $this->get_table();
 		$this->db->insert($table,$data);

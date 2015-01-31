@@ -1,4 +1,5 @@
 <?php
+modules::run('tracking/track');
 if(!$this->session->userdata('logged_in')){	redirect(BASEURL.'login/loginView', 'refresh');}
 
 $session_data = $this->session->userdata('logged_in');

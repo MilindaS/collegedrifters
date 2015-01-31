@@ -15,7 +15,9 @@ class Admin extends MX_Controller {
 		$this->load->module('item');
 
 	}
-
+	function googleAnalytic(){
+		$this->generateAdminTempalte('googleAnalytic');
+	}
 	function dash(){
 		$data['page_name'] = 'Dashboard';
 		$data['item_count'] = $this->item->count_all();

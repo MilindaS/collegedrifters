@@ -129,3 +129,10 @@
     </div>
   </div>
 </div>
+
+<?php 
+
+	//echo count(modules::run('tracking/uniqueTracking'));
+	//echo count(modules::run('tracking/allHits'));
+
+?>

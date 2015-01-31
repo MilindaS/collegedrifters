@@ -31,6 +31,11 @@ class Rename extends MX_Controller {
 		return $query;
 	}
 
+	function get_group_by($col){
+		$query = $this->mdl_tracking->get_group_by($col);
+		return $query;
+	}
+
 	function _insert($data){
 
 		$this->mdl_rename->_insert($data);
