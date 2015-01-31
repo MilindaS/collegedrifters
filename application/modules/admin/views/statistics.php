@@ -8,19 +8,33 @@ $array_page_views = modules::run('tracking/_custom_query',$query_page_views)->re
 
 
 $query_facebook_refers = "SELECT *
-                    FROM tb_tracks 
+                    FROM tb_tracks
                     WHERE visitor_refferer LIKE '%facebook.com%'
                     GROUP BY visitor_ip";
 $array_facebook_views = count(modules::run('tracking/_custom_query',$query_facebook_refers)->result());
 
 $query_twitter_refers = "SELECT *
-                    FROM tb_tracks 
+                    FROM tb_tracks
                     WHERE visitor_refferer LIKE '%twitter.com%'
                     GROUP BY visitor_ip";
 $array_twitter_views = count(modules::run('tracking/_custom_query',$query_twitter_refers)->result());
 
 
-$query_logger_auth = "SELECT * FROM tb_auth_logger GROUP BY auth_login_user_id ORDER BY auth_ts DESC LIMIT 5";
+// $query_logger_auth = "SELECT * FROM tb_auth_logger
+//                       WHERE auth_logout_ts = ''
+//                       GROUP BY auth_login_user_id
+//                       LIMIT 5";
+
+$query_logger_auth = "SELECT auth_login_user_id, auth_login_ts, auth_logout_ts
+                      FROM tb_auth_logger
+                      WHERE auth_login_ts =
+                        (SELECT max(auth_login_ts)
+                          FROM tb_auth_logger as f
+                          WHERE f.auth_login_user_id = tb_auth_logger.auth_login_user_id)
+                      ORDER BY auth_login_ts DESC
+                      ";
+//$query_twitter_refers = "SELECT auth_login_user_id, max(auth_login_ts) as login_ts,max(auth_logout_ts) as logout_ts";
+//$query_logger_auth = "SELECT * FROM tb_auth_logger ORDER BY auth_ts LIMIT 5";
 
 $array_logger_auth = modules::run('loginlogger/_custom_query',$query_logger_auth)->result();
 ?>
@@ -38,7 +52,7 @@ $array_logger_auth = modules::run('loginlogger/_custom_query',$query_logger_auth
   <div class="panel-body">
   <div class="admin-body-page-name">Statistics</div>
     <?php
-  
+
     ?>
     <div class="row">
       <!-- <div class="col-md-3">
@@ -103,7 +117,7 @@ $array_logger_auth = modules::run('loginlogger/_custom_query',$query_logger_auth
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="panel panel-default admin-dash-snippet">
-          <div class="panel-body table-responsive">
+          <div class="panel-body table-responsive" style="height:200px;overflow-y:scroll;">
           <div id="total-visitor-snippet-title">Last 5 Marketplace Users</div>
            <table class="table table-striped" >
              <thead>
@@ -118,7 +132,7 @@ $array_logger_auth = modules::run('loginlogger/_custom_query',$query_logger_auth
              <?php foreach ($array_logger_auth as $logger) { ?>
              <tr>
                <td>
-                <?php 
+                <?php
                   $logger->auth_login_user_id;
                   $user_arr = modules::run('user/get_where',$logger->auth_login_user_id)->result()[0];
                   ?>
