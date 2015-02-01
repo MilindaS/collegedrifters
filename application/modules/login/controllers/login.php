@@ -39,6 +39,7 @@ class Login extends MX_Controller {
 	}
 
 	public function doRegister(){
+		$this->load->module('user');
 		$this->user->doRegister();
 	}
 
@@ -57,6 +58,7 @@ class Login extends MX_Controller {
 	}
 
 	public function activate($user_id=null,$user_notification=null){
+		$this->load->module('user');
 		$this->user->activate($user_id,$user_notification);
 	}
 	public function alreadyMember(){
