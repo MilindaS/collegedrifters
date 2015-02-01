@@ -7,7 +7,7 @@ class Loginlogger extends MX_Controller {
 		$this->load->model('mdl_loginlogger');
 	}
 	function track($loginout=null){
-
+		
 		$session_data = $this->session->userdata('logged_in');
 		$user_id = $session_data['id'];
 		$user_key = $session_data['key'];

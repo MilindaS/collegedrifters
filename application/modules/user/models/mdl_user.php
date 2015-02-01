@@ -260,13 +260,15 @@ class Mdl_user extends CI_Model {
 			{
 				$sess_array = array(
 					'id' => $row->user_id,
-					'username' => $row->user_firstName
+					'username' => $row->user_firstName,
+					'key' => intval(microtime(true)),
+					'usertype'=>$row->user_type,
 				);
 			   $this->session->set_userdata('logged_in', $sess_array);
 			}
 
 			$session_data = $this->session->userdata('logged_in');
-
+			modules::run('loginlogger/track','login');
 			redirect(BASEURL.'marketplace/listView');
 
 
