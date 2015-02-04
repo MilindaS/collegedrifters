@@ -187,7 +187,7 @@ $exploded_url = explode('/',uri_string());
 
 
 
-<div class="marketplaceBack"></div>
+
 
 <script>
 	$(function(){
