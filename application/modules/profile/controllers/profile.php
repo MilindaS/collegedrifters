@@ -7,17 +7,26 @@ class Profile extends MX_Controller {
 		$this->load->model('mdl_profile');
 		$this->load->module('home');
 	}
-	public function view()
+	public function view($id=false)
 	{
-		$css_array = array('bootstrapValidator.css','datepicker.css');
-		$js_array = array('bootstrapValidator.min.js','jquery.form.js');
-		$this->user = $this->mdl_profile->getUserInformation();
-		$this->user_items_array = $this->mdl_profile->getUserItems();
-		$this->requested_items_array = $this->mdl_profile->getRequestedItems();
-		$this->unwatched =  $this->mdl_profile->getUnWatchedCount();
-		$this->home->marketPlaceHeader($css_array,$js_array);
-		$this->load->view('view');
-		$this->home->marketPlaceFooter();
+		if($id){
+			$this->load->module('user');
+			$data['user_id'] = $id;
+			$data['user_data'] = $this->user->get_where($id)->result()[0];
+			$this->home->marketPlaceHeader();
+			$this->load->view('view',$data);
+			$this->home->marketPlaceFooter();
+		}else{
+			$css_array = array('bootstrapValidator.css','datepicker.css');
+			$js_array = array('bootstrapValidator.min.js','jquery.form.js');
+			$this->user = $this->mdl_profile->getUserInformation();
+			$this->user_items_array = $this->mdl_profile->getUserItems();
+			$this->requested_items_array = $this->mdl_profile->getRequestedItems();
+			$this->unwatched =  $this->mdl_profile->getUnWatchedCount();
+			$this->home->marketPlaceHeader($css_array,$js_array);
+			$this->load->view('view');
+			$this->home->marketPlaceFooter();
+		}
 	}
 
 	public function itemRequest($request_id)

@@ -155,7 +155,7 @@ $counter ++;
 
 								<div class="row">
 									<div class="col-md-12">
-										<div class="postedAdAuthor"> <span class="glyphicon glyphicon-user" ></span>&nbsp; By <?php echo $user[0]['user_firstName'];?> | On <?php echo   date("Y-M-d   g:i A", strtotime($item->item_created_date)); ;?> </div>
+										<div class="postedAdAuthor"> <span class="glyphicon glyphicon-user" ></span>&nbsp; By <a href="<?php echo BASEURL;?>profile/view/<?php echo $user[0]['user_id'];?>"><?php echo $user[0]['user_firstName'];?></a> | On <?php echo   date("Y-M-d   g:i A", strtotime($item->item_created_date)); ;?> </div>
 									</div>
 								</div>
 
