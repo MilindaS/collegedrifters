@@ -1,4 +1,4 @@
-<div id="footer">
+<div id="footer" style="background:black;color:#aeaeae;font-size:11px;padding:5px 0px;">
 <footer>
 <center>
 					&copy; 2014 <span style="color:#9B539C;">College<span style="color:#B4100A">drifters</span></span> &nbsp;
