@@ -20,12 +20,14 @@ class Loginlogger extends MX_Controller {
 			
 			$this->_update('auth_log_key',$user_key,$data);
 		}else{
-			$data = array(
-			'auth_login_user_id'=>$user_id,
-			'auth_login_ts'=>date('Y-m-d H:i:s'),
-			'auth_log_key'=>$user_key
-			);
-			$this->_insert($data);
+			if($user_id){
+				$data = array(
+				'auth_login_user_id'=>$user_id,
+				'auth_login_ts'=>date('Y-m-d H:i:s'),
+				'auth_log_key'=>$user_key
+				);
+				$this->_insert($data);
+			}
 		}
 
 	}
