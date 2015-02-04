@@ -88,7 +88,7 @@ if(isset($user_id)){
 				</div>
 			</div>
 
-			<div class="col-md-10" style="padding:10px;padding-top:0px;">
+			<div class="col-md-10" style="padding:15px;padding-top:0px;">
 				<div class="row">
 					<div class="col-md-12" >
 						<div  >
