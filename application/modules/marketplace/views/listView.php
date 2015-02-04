@@ -172,7 +172,9 @@ $counter ++;
 								<div class="row" style="border-top:1px solid #DDD;margin-top:5px;">
 									<div class="col-md-12">
 										<div class="fb-share-button btn btn-sm pull-left" data-href="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" data-layout="button_count"></div>
-										<a href="https://twitter.com/share" class="twitter-share-button pull-left" data-url="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" >Tweet</a>
+										<div style="float:left;margin-top:5px;">
+											<a href="https://twitter.com/share" class="twitter-share-button pull-left" data-url="<?php echo BASEURL;?>marketplace/itemView/<?php echo $item->item_id;?>" >Tweet</a>
+										</div>
 									</div>
 								</div>
 
