@@ -18,7 +18,7 @@ if(isset($user_id)){
 		
 		<div class="row">
 
-			<div class="col-md-2" style="padding:10px;">
+			<div class="col-md-2" style="padding:15px;">
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<center><?php if($user_data->user_pic==null){ echo '<a href=" '.BASEURL.'profile/edit/'.$user_data->user_id.' " >';}?><img src="<?php if($user_data->user_pic!=null){ echo BASEURL.$user_data->user_pic; }else{ echo BASEURL;?>public/images/profile-no-photo.png<?php } ?>" alt="..." style="width:100%;max-width:160px;box-shadow:0px 0px 5px rgba(0,0,0,0.5);"><?php if($user_data->user_pic==null){ echo '</a>';}?></center>
@@ -34,7 +34,7 @@ if(isset($user_id)){
 				</div>
 			</div>
 
-			<div class="col-md-10" style="padding:10px;padding-top:0px;">
+			<div class="col-md-10" style="padding:15px;padding-top:0px;">
 				<div class="row">
 					<div class="col-md-12" >
 						<div  >
@@ -72,7 +72,7 @@ if(isset($user_id)){
 		</div>
 		<div class="row">
 
-			<div class="col-md-2" style="padding:15px;">
+			<div class="col-md-2" style="padding:10px;">
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<center><?php if($this->user['user_pic']==null){ echo '<a href=" '.BASEURL.'profile/edit/'.$this->user['user_id'].' " >';}?><img src="<?php if($this->user['user_pic']!=null){ echo BASEURL.$this->user['user_pic']; }else{ echo BASEURL;?>public/images/profile-no-photo.png<?php } ?>" alt="..." style="width:100%;max-width:160px;box-shadow:0px 0px 5px rgba(0,0,0,0.5);"><?php if($this->user['user_pic']==null){ echo '</a>';}?></center>
@@ -88,7 +88,7 @@ if(isset($user_id)){
 				</div>
 			</div>
 
-			<div class="col-md-10" style="padding:15px;padding-top:0px;">
+			<div class="col-md-10" style="padding:20px;padding-top:0px;">
 				<div class="row">
 					<div class="col-md-12" >
 						<div  >
@@ -214,6 +214,8 @@ if(isset($user_id)){
 
 		</div>
 	</div>
+</div>
+</div>
 </div>
 <?php
 }
