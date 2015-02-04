@@ -18,8 +18,4 @@
   ga('create', 'UA-41470505-1', 'auto');
   ga('send', 'pageview');
 
-$(document).ready(function(){
-	$('#footer').css({'top':($(document).outerHeight()-$('#footer').outerHeight()-5),'position':'absolute'});
-});
-
 </script>
