@@ -82,7 +82,7 @@
 				  ?>
 				    <div class="item <?php if($counter==1){echo 'active';}?>">
 				  	<a href="<?php echo $slide->slide_url;?>" target="_blank">
-				      <img src="<?php echo BASEURL.$slide->slide_img;?>" alt="..." width="100%" style="height:100px;">
+				      <img src="<?php echo BASEURL.$slide->slide_img;?>" alt="..." width="100%" style="height:auto;">
 				      <div class="carousel-caption">
 				          <h3 style="position:relative;top:40px;color:black;"><?php echo $slide->slide_caption;?></h3>
 				      </div>
