@@ -148,8 +148,227 @@ public function getItemFilterdList(){
 					ON tb_items.item_user_id = tb_users.user_id
 					";
 		$params = array();
-
+if(($_POST['school'])!=null){
 	if(($_POST['state'])!=null){
+			if(($_POST['city'])!=null){
+			if(($_POST['minPrice'])!=null){
+				if(($_POST['maxPrice'])!=null){
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND  tb_users.user_city LIKE ? AND tb_users.user_state LIKE ? AND tb_items.item_category =? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],$_POST['maxPrice'],'%'.$_POST['city'].'%','%'.$_POST['state'].'%',$_POST['category'],'%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND  tb_users.user_city LIKE ?  AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],$_POST['maxPrice'],'%'.$_POST['city'].'%','%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+				else{
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price > ? AND  tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],'%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price > ? AND  tb_users.user_city LIKE ? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],'%'.$_POST['city'].'%','%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+			}
+			else{
+
+				if(($_POST['maxPrice'])!=null){
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price < ? AND  tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['maxPrice'],'%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price < ? AND  tb_users.user_city LIKE ? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['maxPrice'],'%'.$_POST['city'].'%','%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+				else{
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array('%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_users.user_city LIKE ? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array('%'.$_POST['city'].'%','%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+
+
+			}
+		}
+		else{
+
+
+				if(($_POST['minPrice'])!=null){
+				if(($_POST['maxPrice'])!=null){
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND  tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ? ";
+						$params = array($_POST['minPrice'],$_POST['maxPrice'],$_POST['category'] ,'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],$_POST['maxPrice'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+				else{
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price > ? AND tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],$_POST['category'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price > ? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+			}
+			else{
+
+				if(($_POST['maxPrice'])!=null){
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price < ? AND tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['maxPrice'],$_POST['category'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price < ? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['maxPrice'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+				}
+				else{
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_category =? AND tb_users.user_state LIKE ? AND tb_users.user_school LIKE ? ";
+						$params = array($_POST['category'],'%'.$_POST['state'].'%','%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_users.user_school LIKE ?";
+						$params = array('%'.$_POST['school'].'%');
+					}
+				}
+
+
+			}
+
+
+		}
+
+		}else{
+		if(($_POST['city'])!=null){
+			if(($_POST['minPrice'])!=null){
+				if(($_POST['maxPrice'])!=null){
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND  tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],$_POST['maxPrice'],'%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND  tb_users.user_city LIKE ? AND tb_users.user_school LIKE ? ";
+						$params = array($_POST['minPrice'],$_POST['maxPrice'],'%'.$_POST['city'].'%','%'.$_POST['school'].'%');
+					}
+				}
+				else{
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price > ? AND  tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],'%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price > ? AND  tb_users.user_city LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['minPrice'],'%'.$_POST['city'].'%','%'.$_POST['school'].'%');
+					}
+				}
+			}
+			else{
+
+				if(($_POST['maxPrice'])!=null){
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_items.item_price < ? AND  tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['maxPrice'],'%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_items.item_price < ? AND  tb_users.user_city LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array($_POST['maxPrice'],'%'.$_POST['city'].'%','%'.$_POST['school'].'%');
+					}
+				}
+				else{
+					if(($_POST['category'])!=null){
+						$sql .=	"WHERE tb_users.user_city LIKE ? AND tb_items.item_category =? AND tb_users.user_school LIKE ?";
+						$params = array('%'.$_POST['city'].'%',$_POST['category'],'%'.$_POST['school'].'%');
+					}
+					else{
+						$sql .=	"WHERE tb_users.user_city LIKE ? AND tb_users.user_school LIKE ?";
+						$params = array('%'.$_POST['city'].'%','%'.$_POST['school'].'%');
+					}
+				}
+
+
+			}
+		}
+		else{
+				if(($_POST['minPrice'])!=null){
+					if(($_POST['maxPrice'])!=null){
+						if(($_POST['category'])!=null){
+							$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND  tb_items.item_category =? AND tb_users.user_school LIKE ?";
+							$params = array($_POST['minPrice'],$_POST['maxPrice'],$_POST['category'],'%'.$_POST['school'].'%');
+						}
+						else{
+							$sql .=	"WHERE tb_items.item_price BETWEEN ? AND ? AND tb_users.user_school LIKE ?";
+							$params = array($_POST['minPrice'],$_POST['maxPrice'],'%'.$_POST['school'].'%');
+						}
+					}
+					else{
+						if(($_POST['category'])!=null){
+							$sql .=	"WHERE tb_items.item_price > ? AND tb_items.item_category =? AND tb_users.user_school LIKE ? ";
+							$params = array($_POST['minPrice'],$_POST['category'],'%'.$_POST['school'].'%');
+						}
+						else{
+							$sql .=	"WHERE tb_items.item_price > ? AND tb_users.user_school LIKE ?";
+							$params = array($_POST['minPrice'],'%'.$_POST['school'].'%');
+						}
+					}
+				}
+				else{
+
+					if(($_POST['maxPrice'])!=null){
+						if(($_POST['category'])!=null){
+							$sql .=	"WHERE tb_items.item_price < ? AND tb_items.item_category =? AND tb_users.user_school LIKE ?";
+							$params = array($_POST['maxPrice'],$_POST['category'],'%'.$_POST['school'].'%');
+						}
+						else{
+							$sql .=	"WHERE tb_items.item_price < ?  AND tb_users.user_school LIKE ?";
+							$params = array($_POST['maxPrice'],'%'.$_POST['school'].'%');
+						}
+					}
+					else{
+						if(($_POST['category'])!=null){
+							$sql .=	"WHERE tb_items.item_category =? AND tb_users.user_school LIKE ?";
+							$params = array($_POST['category'],'%'.$_POST['school'].'%');
+						}
+						else{
+							$sql .=	"WHERE tb_users.user_school LIKE ?";
+							$params = array('%'.$_POST['school'].'%');
+						}
+					}
+
+
+				}
+
+
+			}
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+		else{
+			if(($_POST['state'])!=null){
 			if(($_POST['city'])!=null){
 			if(($_POST['minPrice'])!=null){
 				if(($_POST['maxPrice'])!=null){
@@ -354,6 +573,7 @@ public function getItemFilterdList(){
 
 
 			}
+		}
 		}
 
 		$query = $this->db->query($sql,$params);
