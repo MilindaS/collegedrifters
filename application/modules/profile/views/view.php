@@ -39,7 +39,7 @@ if(isset($user_id)){
 					<div class="col-md-12" >
 						<div  >
 							<h3><?php echo $user_data->user_firstName." ".$user_data->user_lastName;?></h3>
-							<h5><span class="glyphicon glyphicon-map-marker"></span> <?php echo $user_data->user_city." , ".$user_data->user_state;?></h5>
+							<h5><span class="glyphicon glyphicon-map-marker"></span> <?php echo $user_data->user_city." , ".$user_data->user_state." , ".$user_data->user_zip;?></h5>
 							<?php if($user_data->user_email_visibility!=1){ ?><h5><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;<?php echo $user_data->user_email;?></h5><?php } ?>
 							<?php if($user_data->user_mobile_visibility!=1){ ?><h5 ><span class="glyphicon glyphicon-phone"></span> <?php echo $user_data->user_mobile;?></h5><?php } ?>
 							<h5 ><span class="glyphicon glyphicon-book"></span> <?php echo $user_data->user_school;?></h5>
@@ -93,7 +93,7 @@ if(isset($user_id)){
 					<div class="col-md-12" >
 						<div  >
 							<h3><?php echo $this->user['user_firstName']." ".$this->user['user_lastName'];?></h3>
-							<h5><span class="glyphicon glyphicon-map-marker"></span> <?php echo $this->user['user_city']." , ".$this->user['user_state'];?></h5>
+							<h5><span class="glyphicon glyphicon-map-marker"></span> <?php echo $this->user['user_city']." , ".$this->user['user_state']." , ".$this->user['user_zip'];?></h5>
 							<?php if($this->user['user_email_visibility']!=1){ ?><h5><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;<?php echo $this->user['user_email'];?></h5><?php } ?>
 							<?php if($this->user['user_mobile_visibility']!=1){ ?><h5 ><span class="glyphicon glyphicon-phone"></span> <?php echo $this->user['user_mobile'];?></h5><?php } ?>
 							<h5 ><span class="glyphicon glyphicon-book"></span> <?php echo $this->user['user_school'];?></h5>

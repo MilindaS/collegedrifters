@@ -69,7 +69,12 @@
 							  <input type="text" class="form-control" name="user_state" placeholder="Enter State" value="<?php echo $user->user_state;?>">
 							</div>
 						  </div>
-
+							<div class="form-group">
+							<label class="col-sm-2 control-label" style="color:#525252;">Zip Code</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" name="user_state" placeholder="Enter State" value="<?php echo $user->user_zip;?>">
+							</div>
+						  </div>
 						  <div class="form-group">
 							<label class="col-sm-2 control-label" style="color:#525252;">School Name</label>
 							<div class="col-sm-10">

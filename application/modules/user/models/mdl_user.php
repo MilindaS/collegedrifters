@@ -94,7 +94,9 @@ class Mdl_user extends CI_Model {
 		if(isset($_POST['state']) AND $_POST['state']!=null ){
 			$user_state = $_POST['state'];
 		}
-
+		if(isset($_POST['zip']) AND $_POST['zip']!=null ){
+			$user_zip = $_POST['zip'];
+		}
 		if(isset($_POST['school']) AND $_POST['school']!=null ){
 			$user_school = $_POST['school'];
 		}
@@ -147,6 +149,7 @@ class Mdl_user extends CI_Model {
 																user_school,
 																user_city,
 																user_state,
+																user_zip,
 																user_password,
 																user_type,
 																user_notification,
@@ -154,6 +157,7 @@ class Mdl_user extends CI_Model {
 																user_activation
 																)
 																VALUES(
+																?,
 																?,
 																?,
 																?,
@@ -177,6 +181,7 @@ class Mdl_user extends CI_Model {
 										$user_school,
 										$user_city,
 										$user_state,
+										$user_zip,
 										$user_password,
 										$user_type,
 										$user_notification,

@@ -94,7 +94,7 @@ class Mdl_profile extends CI_Model {
 		return $query->row_array();
 	}
 	public function update(){
-			$db_column_array = array('user_firstName','user_lastName','user_email','user_dob','user_mobile','user_city','user_state','user_school','user_gig','user_email_visibility','user_mobile_visibility');
+			$db_column_array = array('user_firstName','user_lastName','user_email','user_dob','user_mobile','user_city','user_state','user_zip','user_school','user_gig','user_email_visibility','user_mobile_visibility');
 
 			$session_data = $this->session->userdata('logged_in');
 			$user_id = $session_data['id'];

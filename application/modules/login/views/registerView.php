@@ -89,6 +89,10 @@
     <input type="text" class="form-control" name="state" placeholder="Enter State">
   </div>
   <div class="form-group">
+    <label class="control-label" >Zip Code</label>
+    <input type="text" class="form-control" name="zip" placeholder="Enter Zip Code">
+  </div>
+  <div class="form-group">
     <label class="control-label">School Name</label>
     <input type="text" class="form-control" id="school" name="school" placeholder="Enter School Name">		
   </div>
@@ -446,6 +450,13 @@ $(document).ready(function(){
                 validators: {
                     notEmpty: {
                         message: 'State cannot be empty'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Zip code cannot be empty'
                     }
                 }
             },
