@@ -19,8 +19,8 @@
 						  <div class="form-group">
 							<input type="text" class="form-control" name="city" placeholder="City"   style="width:100%;" value="<?php if(isset($_POST['city'])){echo $_POST['city'];}?>">
 							<input type="text" class="form-control" name="state" placeholder="State"  value="<?php if(isset($_POST['state'])){echo $_POST['state'];}?>" style="width:100%;">
-							<input type="text" class="form-control" name="zip" placeholder="Zip"   style="width:100%;" value="<?php if(isset($_POST['city'])){echo $_POST['city'];}?>">
-							<input type="text" class="form-control" name="school" placeholder="School"   style="width:100%;">
+							<input type="text" class="form-control" name="zip" placeholder="Zip"   style="width:100%;" value="<?php if(isset($_POST['zip'])){echo $_POST['zip'];}?>">
+							<input type="text" class="form-control" name="school" placeholder="School"   style="width:100%;" value="<?php if(isset($_POST['school'])){echo $_POST['school'];}?>">
 							<input type="text" class="form-control" name="minPrice" placeholder="$ Min" value="<?php if(isset($_POST['minPrice'])){echo $_POST['minPrice'];}?>">
 							<input type="text" class="form-control" name="maxPrice" placeholder="$ Max" value="<?php if(isset($_POST['maxPrice'])){echo $_POST['maxPrice'];}?>">
 								<select class="form-control" name="category" >
