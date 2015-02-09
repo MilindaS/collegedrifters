@@ -19,6 +19,8 @@
 						  <div class="form-group">
 							<input type="text" class="form-control" name="city" placeholder="City" style="width:100%;" >
 							<input type="text" class="form-control" name="state" placeholder="State"   style="width:100%;">
+							<input type="text" class="form-control" name="zip" placeholder="Zip"   style="width:100%;">
+							<input type="text" class="form-control" name="school" placeholder="School"   style="width:100%;">
 							<input type="text" class="form-control" name="minPrice" placeholder="$ Min">
 							<input type="text" class="form-control" name="maxPrice" placeholder="$ Max">
 								<select class="form-control" name="category" >

@@ -457,7 +457,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 
 
 
-@media(min-width: 768px) {
+@media(min-width: 998px) {
 	/* 768 ta wedi ewa */
 	.cdNav .navbar-collapse{
 		float:right;
@@ -466,7 +466,7 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 		width:80px;
 	}
 
-	#advancedSearchBar input[name="city"],#advancedSearchBar input[name="state"]{
+	#advancedSearchBar input[name="school"],#advancedSearchBar input[name="city"],#advancedSearchBar input[name="state"],#advancedSearchBar input[name="zip"]{
 		max-width:100px;
 	}
 }

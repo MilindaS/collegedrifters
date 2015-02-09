@@ -150,9 +150,6 @@ public function getItemFilterdList(){
 		$params = array();
 
 	if(($_POST['state'])!=null){
-
-
-
 			if(($_POST['city'])!=null){
 			if(($_POST['minPrice'])!=null){
 				if(($_POST['maxPrice'])!=null){
