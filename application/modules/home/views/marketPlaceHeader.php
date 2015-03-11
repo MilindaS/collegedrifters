@@ -42,6 +42,8 @@ $exploded_url = explode('/',uri_string());
 	<script src="<?php	echo BASEURL;?>public/js/jquery-1.11.0.min.js"></script>
 	<script src="<?php	echo BASEURL;?>public/js/bootstrap.js"></script>
 	<script src="<?php	echo BASEURL;?>public/js/jquery.scrollUp.min.js"></script>
+	<script src="<?php	echo BASEURL;?>public/vendor/ckeditor/ckeditor.js"></script>
+	<script src="<?php	echo BASEURL;?>public/vendor/ckeditor/adapters/jquery.js"></script>
 	<?php
 	if(isset($js_array) && !empty($js_array))
 	{

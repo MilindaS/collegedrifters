@@ -183,7 +183,9 @@
 	});
 
 
-
+$( document ).ready( function() {
+	$( 'textarea#item_description' ).ckeditor();
+} );
 
 });
 
