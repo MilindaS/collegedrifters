@@ -1,9 +1,5 @@
 <!--<div class="blendBackground"></div>-->
-<?php
-if(($this->session->flashdata('passwordChnged'))){
-	echo '<div style="position:absolute;bottom:10px;right:10px;border-radius:5px;padding:6px 20px;background:#60C29B;color:#fff;">Your password successfully changed !</div>';
-}
-?>
+
 <div class="cdTopLinkBar">
 		<div class="container-fluid">
 
@@ -41,34 +37,32 @@ if(($this->session->flashdata('passwordChnged'))){
 
 
 <div class="panel panel-primary cdLogin" >
-	  <div class="panel-heading"><strong>Login</strong></div>
+	  <div class="panel-heading"><strong>Reset Password</strong></div>
 	  <div class="panel-body" >
 
-		<form id="defaultForm" method="post" action="<?php echo BASEURL;?>login/doLogin">
+		<form id="defaultForm" method="post" action="<?php echo BASEURL;?>login/changePassword">
 
-			<div class="form-group ">
-				<label class="control-label">Email</label>
-				<input type="email" class="form-control"  name="email" placeholder="Sample@abc.edu">
-			</div>
 			<div class="form-group">
-				<label class="control-label">Password</label>
-				<input type="password" class="form-control" name="password" placeholder="Password">
-			</div>
+			    <label class="control-label">Password</label>
+			    <input type="password" class="form-control" name="password" placeholder="Enter 6 character password">
+			  </div>
+			  <div class="form-group">
+			    <label class="control-label">Re type Password</label>
+			    <input type="password" class="form-control" name="repassword" placeholder="Re enter password">
+			  </div>
 			<?php if($this->errorLogin!=null){?>
-			<div class="alert alert-danger" role="alert">Email and Password are Incorrect !</div>
+			<div class="alert alert-danger" role="alert">Error in recovering password !</div>
 			<?php } ?>
 			<div class="form-group">
-			<button type="submit" class="btn btn-primary btn-block" name="signup" ><strong>Login</strong></button>
+			<button type="submit" class="btn btn-primary btn-block" name="signup" ><strong>Submit</strong></button>
 			</div>
 			<div class="form-group">
-				<b style="font-size:12px;float:left;">
-				<a href="<?php echo BASEURL;?>login/registerView"> Don't have an account ?</a>
-				</b>
-				
-				<b style="font-size:12px;float:right">
-				 <a href="<?php echo BASEURL;?>login/forgotPasswordView"> Forgot Password ?</a>
+				<b style="font-size:12px;margin-left:50px;float:left;">
+				Have an account? <a href="<?php echo BASEURL;?>login/loginView">Sign</a> in or <a href="<?php echo BASEURL;?>login/registerView">Sign up</a>
 				</b>
 			</div>
+			<input type="hidden" name="user_id" value="<?php echo $this->user_id;?>">
+			<input type="hidden" name="user_activation" value="<?php echo $this->user_activation;?>">
 		</form>
 	  </div>
 </div>
@@ -89,7 +83,7 @@ if(($this->session->flashdata('passwordChnged'))){
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" style="padding:10px;">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>	
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <img src="<?php echo BASEURL;?>public/images/logo.png" alt="" style="width:100%;max-width:200px;" />
 	  <p style="padding:40px 10px;">
 		The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other.
@@ -123,13 +117,11 @@ $('input[name="password"]').focus(function(){
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            email: {
+        	repassword: {
                 validators: {
-                    notEmpty: {
-                        message: 'Email cannot be empty'
-                    },
-					emailAddress: {
-                        message: 'The is not a valid email address'
+                    identical: {
+                        field: 'password',
+                        message: 'The password and its confirm are not the same'
                     }
                 }
             },
@@ -137,9 +129,18 @@ $('input[name="password"]').focus(function(){
                 validators: {
                     notEmpty: {
                         message: 'Password cannot be empty'
+                    },
+					stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The password must be more than 6 characters'
+                    },
+					identical: {
+                        field: 'repassword',
+                        message: 'The password and its confirm are not the same'
                     }
                 }
-            }
+            },
 		}
 
 	});

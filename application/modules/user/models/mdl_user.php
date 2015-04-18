@@ -241,11 +241,44 @@ class Mdl_user extends CI_Model {
 
 
 	}
+	public function changePassword(){
+		if(isset($_POST['password']) AND $_POST['password']!=null ){
+			$user_password = sha1($_POST['password']);
+		}
+		if(isset($_POST['user_id']) AND $_POST['user_id']!=null ){
+			$user_id = $_POST['user_id'];
+		}
+		if(isset($_POST['user_activation']) AND $_POST['user_activation']!=null ){
+			$user_activation = $_POST['user_activation'];
+		}
 
+		$sql = "SELECT * FROM tb_users  WHERE user_id =? AND user_activation=?";
+		$params = array($user_id,$user_activation);
+		$query = $this->db->query($sql,$params);
+
+		$result = $query->result();
+		$result_array = $query->result_array();
+		if ($query->num_rows() <= 0)
+		{
+			redirect(BASEURL.'login/recoverPasswordPinput/'.$user_id.'/'.$user_activation.'/err');
+			exit();
+		}
+
+		$sql = "UPDATE tb_users SET user_activation=null,user_password=? WHERE(user_id =? AND user_activation=?) LIMIT 1";
+		$params = array(
+						$user_password,
+						$user_id,
+						$user_activation
+						);
+		$query = $this->db->query($sql,$params);
+		$this->session->set_flashdata('passwordChnged', 'done');
+		redirect(BASEURL.'login/loginView');
+		exit();
+	}
 	public function recoverPasswordSM(){
-		// if(isset($_POST['email']) AND $_POST['email']!=null ){
-		// 	$user_email = $_POST['email'];
-		// }
+		if(isset($_POST['email']) AND $_POST['email']!=null ){
+			$user_email = $_POST['email'];
+		}
 		$user_email = 'hlsmilinda@gmail.com';
 		$sql = "SELECT * FROM tb_users  WHERE user_email =? ";
 		$params = array($user_email);
@@ -288,7 +321,7 @@ class Mdl_user extends CI_Model {
 								  </head>
 								  <body style="font-family:calibri,sans-serif;font-size:16px;color:black;">
 									<h3>Hi '.$user_firstName.'</h3>
-									<p>
+									<p style="font-size:12px;">
 										We recently received a password reset request for your email address.
 										<br />
 										If you would like to reset your password, please do so using the following link.

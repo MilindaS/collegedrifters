@@ -16,6 +16,9 @@ class User extends MX_Controller {
 	public function recoverPasswordSM(){
 		$this->mdl_user->recoverPasswordSM();	
 	}
+	public function changePassword(){
+		$this->mdl_user->changePassword();
+	}
 	public function doRegister(){
 		$this->mdl_user->doRegister();
 	}

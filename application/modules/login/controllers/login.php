@@ -28,10 +28,24 @@ class Login extends MX_Controller {
 		$this->load->module('user');
 		$this->user->doLogin();
 	}
-
+	public function recoverPasswordPinput($user_id,$user_activation,$errorLogin=null){
+		$this->errorLogin = $errorLogin;
+		$this->user_id = $user_id;
+		$this->user_activation = $user_activation;
+		$css_array = array('bootstrapValidator.css');
+		$js_array = array('bootstrapValidator.min.js');
+		$this->home->header($css_array,$js_array);
+		$this->load->view('recoverPasswordPinput');
+		$this->home->footer();
+	}
 	public function recoverPasswordSM(){
 		$this->load->module('user');
 		$this->user->recoverPasswordSM();
+	}
+
+	public function changePassword(){
+		$this->load->module('user');
+		$this->user->changePassword();
 	}
 
 	public function forgotPasswordView($errorLogin=null){
