@@ -324,11 +324,12 @@ class Mdl_user extends CI_Model {
 									<p style="font-size:12px;">
 										We recently received a password reset request for your email address.
 										<br />
-										If you would like to reset your password, please do so using the following link.
 										<br />
+										If you would like to reset your password, please do so using the following link.
 										<br />
 										<a href="'.BASEURL.'login/recoverPasswordPinput/'.$user_id.'/'.$user_activation.'">'.BASEURL.'/login/recoverPasswordPinput/'.$user_id.'/'.$user_activation.'</a>
 
+										<br />
 										<br />
 										If you didn\'t request a password reset, please ignore this email.
 										<br />
@@ -345,7 +346,7 @@ class Mdl_user extends CI_Model {
 
 		$this->email->send();
 
-		redirect(BASEURL.'login/activationPending');
+		redirect(BASEURL.'login/activationPending/email');
 
 	}
 

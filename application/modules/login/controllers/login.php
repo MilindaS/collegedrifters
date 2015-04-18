@@ -71,11 +71,15 @@ class Login extends MX_Controller {
 		$this->user->doRegister();
 	}
 
-	public function activationPending(){
+	public function activationPending($email=false){
 		$css_array = array('bootstrapValidator.css','datepicker.css');
 		$js_array = array('bootstrapValidator.min.js','bootstrap-datepicker.js');
 		$this->home->header($css_array,$js_array);
-		$this->load->view('activationPending');
+		if($email){
+			$this->load->view('activationPendingEmail');
+		}else{
+			$this->load->view('activationPending');
+		}
 		$this->home->footer();
 	}
 

@@ -3781,3 +3781,366 @@ DEBUG - 2015-04-18 11:56:54 --> File loaded: application/modules/login/views/rec
 DEBUG - 2015-04-18 11:56:54 --> File loaded: application/modules/home/views/footer.php
 DEBUG - 2015-04-18 11:56:54 --> Final output sent to browser
 DEBUG - 2015-04-18 11:56:54 --> Total execution time: 0.0120
+DEBUG - 2015-04-18 12:10:18 --> Config Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:10:18 --> URI Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Router Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Output Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Security Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Input Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:10:18 --> Language Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Language Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Config Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:10:18 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Session Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:10:18 --> Session routines successfully run
+DEBUG - 2015-04-18 12:10:18 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:10:18 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:10:18 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:10:18 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:10:18 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:10:18 --> Model Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:10:18 --> Model Class Initialized
+DEBUG - 2015-04-18 12:10:18 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:10:18 --> File loaded: application/modules/login/views/activationPending.php
+DEBUG - 2015-04-18 12:10:18 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:10:18 --> Final output sent to browser
+DEBUG - 2015-04-18 12:10:18 --> Total execution time: 0.0180
+DEBUG - 2015-04-18 12:14:13 --> Config Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:14:13 --> URI Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Router Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Output Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Security Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Input Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:14:13 --> Language Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Language Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Config Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:14:13 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Session Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:14:13 --> Session routines successfully run
+DEBUG - 2015-04-18 12:14:13 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:14:13 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:14:13 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:14:13 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:14:13 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:14:13 --> Model Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:14:13 --> Model Class Initialized
+DEBUG - 2015-04-18 12:14:13 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:14:13 --> File loaded: application/modules/login/views/activationPending.php
+DEBUG - 2015-04-18 12:14:13 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:14:13 --> Final output sent to browser
+DEBUG - 2015-04-18 12:14:13 --> Total execution time: 0.0140
+DEBUG - 2015-04-18 12:15:52 --> Config Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:15:52 --> URI Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Router Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Output Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Security Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Input Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:15:52 --> Language Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Language Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Config Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:15:52 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Session Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:15:52 --> Session routines successfully run
+DEBUG - 2015-04-18 12:15:52 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:15:52 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:15:52 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:15:52 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:15:52 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:15:52 --> Model Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:15:52 --> Model Class Initialized
+DEBUG - 2015-04-18 12:15:52 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:15:52 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:15:52 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:15:52 --> Final output sent to browser
+DEBUG - 2015-04-18 12:15:52 --> Total execution time: 0.0122
+DEBUG - 2015-04-18 12:16:02 --> Config Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:16:02 --> URI Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Router Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Output Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Security Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Input Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:16:02 --> Language Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Language Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Config Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:16:02 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Session Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:16:02 --> Session routines successfully run
+DEBUG - 2015-04-18 12:16:02 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:02 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:16:02 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:02 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:16:02 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:02 --> Model Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:16:02 --> Model Class Initialized
+DEBUG - 2015-04-18 12:16:02 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:16:02 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:16:02 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:16:02 --> Final output sent to browser
+DEBUG - 2015-04-18 12:16:02 --> Total execution time: 0.0107
+DEBUG - 2015-04-18 12:16:09 --> Config Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:16:09 --> URI Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Router Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Output Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Security Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Input Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:16:09 --> Language Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Language Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Config Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:16:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Session Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:16:09 --> Session routines successfully run
+DEBUG - 2015-04-18 12:16:09 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:09 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:16:09 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:09 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:16:09 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:09 --> Model Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:16:09 --> Model Class Initialized
+DEBUG - 2015-04-18 12:16:09 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:16:09 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:16:09 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:16:09 --> Final output sent to browser
+DEBUG - 2015-04-18 12:16:09 --> Total execution time: 0.0130
+DEBUG - 2015-04-18 12:16:44 --> Config Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:16:44 --> URI Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Router Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Output Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Security Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Input Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:16:44 --> Language Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Language Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Config Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:16:44 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Session Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:16:44 --> Session routines successfully run
+DEBUG - 2015-04-18 12:16:44 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:44 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:16:44 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:44 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:16:44 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:16:44 --> Model Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:16:44 --> Model Class Initialized
+DEBUG - 2015-04-18 12:16:44 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:16:44 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:16:44 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:16:44 --> Final output sent to browser
+DEBUG - 2015-04-18 12:16:44 --> Total execution time: 0.0122
+DEBUG - 2015-04-18 12:17:27 --> Config Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:17:27 --> URI Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Router Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Output Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Security Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Input Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:17:27 --> Language Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Language Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Config Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:17:27 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Session Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:17:27 --> Session routines successfully run
+DEBUG - 2015-04-18 12:17:27 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:27 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:17:27 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:27 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:17:27 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:27 --> Model Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:17:27 --> Model Class Initialized
+DEBUG - 2015-04-18 12:17:27 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:17:27 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:17:27 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:17:27 --> Final output sent to browser
+DEBUG - 2015-04-18 12:17:27 --> Total execution time: 0.0173
+DEBUG - 2015-04-18 12:17:35 --> Config Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:17:35 --> URI Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Router Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Output Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Security Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Input Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:17:35 --> Language Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Language Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Config Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:17:35 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Session Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:17:35 --> Session routines successfully run
+DEBUG - 2015-04-18 12:17:35 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:35 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:17:35 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:35 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:17:35 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:35 --> Model Class Initialized
+DEBUG - 2015-04-18 12:17:35 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:17:35 --> Model Class Initialized
+DEBUG - 2015-04-18 12:17:36 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:17:36 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:17:36 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:17:36 --> Final output sent to browser
+DEBUG - 2015-04-18 12:17:36 --> Total execution time: 0.0186
+DEBUG - 2015-04-18 12:17:53 --> Config Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:17:53 --> URI Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Router Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Output Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Security Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Input Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:17:53 --> Language Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Language Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Config Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:17:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Session Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:17:53 --> Session routines successfully run
+DEBUG - 2015-04-18 12:17:53 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:53 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:17:53 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:53 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:17:53 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:17:53 --> Model Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:17:53 --> Model Class Initialized
+DEBUG - 2015-04-18 12:17:53 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:17:53 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:17:53 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:17:53 --> Final output sent to browser
+DEBUG - 2015-04-18 12:17:53 --> Total execution time: 0.0158
+DEBUG - 2015-04-18 12:18:19 --> Config Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:18:19 --> URI Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Router Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Output Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Security Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Input Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:18:19 --> Language Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Language Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Config Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:18:19 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Session Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:18:19 --> Session routines successfully run
+DEBUG - 2015-04-18 12:18:19 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:18:19 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:18:19 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:18:19 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:18:19 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:18:19 --> Model Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:18:19 --> Model Class Initialized
+DEBUG - 2015-04-18 12:18:19 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:18:19 --> File loaded: application/modules/login/views/activationPending.php
+DEBUG - 2015-04-18 12:18:19 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:18:19 --> Final output sent to browser
+DEBUG - 2015-04-18 12:18:19 --> Total execution time: 0.0199
+DEBUG - 2015-04-18 12:18:23 --> Config Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Hooks Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Utf8 Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> UTF-8 Support Enabled
+DEBUG - 2015-04-18 12:18:23 --> URI Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Router Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Output Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Security Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Input Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-18 12:18:23 --> Language Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Language Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Config Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Loader Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Helper loaded: url_helper
+DEBUG - 2015-04-18 12:18:23 --> Database Driver Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Session Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Helper loaded: string_helper
+DEBUG - 2015-04-18 12:18:23 --> Session routines successfully run
+DEBUG - 2015-04-18 12:18:23 --> Controller Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> Login MX_Controller Initialized
+DEBUG - 2015-04-18 12:18:23 --> File loaded: application/controllers/../modules/home/controllers/home.php
+DEBUG - 2015-04-18 12:18:23 --> Home MX_Controller Initialized
+DEBUG - 2015-04-18 12:18:23 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2015-04-18 12:18:23 --> Tracking MX_Controller Initialized
+DEBUG - 2015-04-18 12:18:23 --> Model Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2015-04-18 12:18:23 --> Model Class Initialized
+DEBUG - 2015-04-18 12:18:23 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2015-04-18 12:18:23 --> File loaded: application/modules/login/views/activationPendingEmail.php
+DEBUG - 2015-04-18 12:18:23 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2015-04-18 12:18:23 --> Final output sent to browser
+DEBUG - 2015-04-18 12:18:23 --> Total execution time: 0.0109
