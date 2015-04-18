@@ -29,6 +29,20 @@ class Login extends MX_Controller {
 		$this->user->doLogin();
 	}
 
+	public function recoverPasswordSM(){
+		$this->load->module('user');
+		$this->user->recoverPasswordSM();
+	}
+
+	public function forgotPasswordView($errorLogin=null){
+		$this->errorLogin = $errorLogin;
+		$css_array = array('bootstrapValidator.css');
+		$js_array = array('bootstrapValidator.min.js');
+		$this->home->header($css_array,$js_array);
+		$this->load->view('forgotPassword');
+		$this->home->footer();
+	}
+
 	public function registerView()
 	{
 		$css_array = array('bootstrapValidator.css','datepicker.css');

@@ -37,32 +37,24 @@
 
 
 <div class="panel panel-primary cdLogin" >
-	  <div class="panel-heading"><strong>Login</strong></div>
+	  <div class="panel-heading"><strong>Recover Password</strong></div>
 	  <div class="panel-body" >
 
-		<form id="defaultForm" method="post" action="<?php echo BASEURL;?>login/doLogin">
+		<form id="defaultForm" method="post" action="<?php echo BASEURL;?>login/recoverPasswordSM">
 
 			<div class="form-group ">
 				<label class="control-label">Email</label>
-				<input type="email" class="form-control"  name="email" placeholder="Sample@abc.edu">
-			</div>
-			<div class="form-group">
-				<label class="control-label">Password</label>
-				<input type="password" class="form-control" name="password" placeholder="Password">
+				<input type="email" class="form-control"  name="email" placeholder="">
 			</div>
 			<?php if($this->errorLogin!=null){?>
-			<div class="alert alert-danger" role="alert">Email and Password are Incorrect !</div>
+			<div class="alert alert-danger" role="alert">This email is not belongs to collegedrifters !</div>
 			<?php } ?>
 			<div class="form-group">
-			<button type="submit" class="btn btn-primary btn-block" name="signup" ><strong>Login</strong></button>
+			<button type="submit" class="btn btn-primary btn-block" name="signup" ><strong>Submit</strong></button>
 			</div>
 			<div class="form-group">
-				<b style="font-size:12px;float:left;">
-				<a href="<?php echo BASEURL;?>login/registerView"> Don't have an account ?</a>
-				</b>
-				
-				<b style="font-size:12px;float:right">
-				 <a href="<?php echo BASEURL;?>login/forgotPasswordView"> Forgot Password ?</a>
+				<b style="font-size:12px;margin-left:50px;float:left;">
+				Have an account? <a href="<?php echo BASEURL;?>login/loginView">Sign</a> in or <a href="<?php echo BASEURL;?>login/registerView">Sign up</a>
 				</b>
 			</div>
 		</form>
@@ -85,7 +77,7 @@
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" style="padding:10px;">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>	
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <img src="<?php echo BASEURL;?>public/images/logo.png" alt="" style="width:100%;max-width:200px;" />
 	  <p style="padding:40px 10px;">
 		The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other.
@@ -126,13 +118,6 @@ $('input[name="password"]').focus(function(){
                     },
 					emailAddress: {
                         message: 'The is not a valid email address'
-                    }
-                }
-            },
-            password: {
-                validators: {
-                    notEmpty: {
-                        message: 'Password cannot be empty'
                     }
                 }
             }

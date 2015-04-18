@@ -194,7 +194,7 @@ class Mdl_user extends CI_Model {
 			$result = $query->result();
 
 			$last_inserted_id = $result[0]->LSI;
-			
+
 		$this->load->library('email');
 		$config['charset'] = 'utf-8';
 		$config['wordwrap'] = TRUE;
@@ -242,6 +242,79 @@ class Mdl_user extends CI_Model {
 
 	}
 
+	public function recoverPasswordSM(){
+		// if(isset($_POST['email']) AND $_POST['email']!=null ){
+		// 	$user_email = $_POST['email'];
+		// }
+		$user_email = 'hlsmilinda@gmail.com';
+		$sql = "SELECT * FROM tb_users  WHERE user_email =? ";
+		$params = array($user_email);
+		$query = $this->db->query($sql,$params);
+
+		$result = $query->result();
+		$result_array = $query->result_array();
+		if ($query->num_rows() <= 0)
+		{
+			redirect(BASEURL.'login/forgotPasswordView/err');
+			exit();
+		}
+
+		$user_firstName = $result_array[0]['user_firstName'];
+		$user_id = $result_array[0]['user_id'];
+		$user_activation = md5(uniqid(rand(), true));
+
+		$sql = "UPDATE tb_users SET user_activation=? WHERE user_id =? LIMIT 1";
+		$params = array(
+						$user_activation,
+						$user_id
+						);
+		$query = $this->db->query($sql,$params);
+		
+
+		$this->load->library('email');
+		$config['charset'] = 'utf-8';
+		$config['wordwrap'] = TRUE;
+		$config['mailtype'] = 'html';
+		$this->email->initialize($config);
+		$this->email->from('collegedrifters@gmail.com', 'CollegeDrifters');
+		$this->email->to($user_email);
+		//$this->email->cc('another@another-example.com');
+		//$this->email->bcc('them@their-example.com');
+
+		$this->email->subject('Reset Password on CollegeDrifters !');
+		$message = '<html>
+								  <head>
+
+								  </head>
+								  <body style="font-family:calibri,sans-serif;font-size:16px;color:black;">
+									<h3>Hi '.$user_firstName.'</h3>
+									<p>
+										We recently received a password reset request for your email address.
+										<br />
+										If you would like to reset your password, please do so using the following link.
+										<br />
+										<br />
+										<a href="'.BASEURL.'login/recoverPasswordPinput/'.$user_id.'/'.$user_activation.'">'.BASEURL.'/login/recoverPasswordPinput/'.$user_id.'/'.$user_activation.'</a>
+
+										<br />
+										If you didn\'t request a password reset, please ignore this email.
+										<br />
+										<br />
+										<br />
+										Have fun Drifting,
+										<br />
+										<a href="http://www.collegedrifters.com" style="text-decoration:none;"><span style="color: #9B539C;"><strong>College</strong></span><span style="color: #B4100A;"><strong>Drifters</strong></span></a>
+									</p>
+								  </body>
+								</html>
+								';
+		$this->email->message($message);
+
+		$this->email->send();
+
+		redirect(BASEURL.'login/activationPending');
+
+	}
 
 	public function activate($user_id,$user_notification){
 		if($user_id!=null AND $user_notification!=null){
