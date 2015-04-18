@@ -279,7 +279,7 @@ class Mdl_user extends CI_Model {
 		if(isset($_POST['email']) AND $_POST['email']!=null ){
 			$user_email = $_POST['email'];
 		}
-		$user_email = 'hlsmilinda@gmail.com';
+		// $user_email = 'hlsmilinda@gmail.com';
 		$sql = "SELECT * FROM tb_users  WHERE user_email =? ";
 		$params = array($user_email);
 		$query = $this->db->query($sql,$params);
