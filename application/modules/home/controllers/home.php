@@ -24,6 +24,16 @@ class Home extends MX_Controller {
 		$this->load->view('header',$data);
 	}
 
+	public function metaHeader(){
+		$this->load->view('metaHeader');
+	}
+
+	public function cdTopLinkBar(){
+		$this->load->view('cdTopLinkBar');
+	}
+	public function cdTopLinkBarForMarket(){
+		$this->load->view('cdTopLinkBarForMarket');
+	}
 	public function footer(){
 		$this->load->view('footer');
 	}

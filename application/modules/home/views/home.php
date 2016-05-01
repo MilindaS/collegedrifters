@@ -1,35 +1,52 @@
 <!-- <div class="marketBackground"></div> -->
 
-<div class="cdTopLinkBar">
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-lg-4 col-md-3 col-xs-12 col-sm-3">
-					<ul class="cdTopList list-unstyled">
-						<a href="http://collegedrifters.com/" id="collegeDriftHomeLink"><li>College<span style="color:#B4100A">Drifters</span></li></a>
-						<a data-toggle="modal" data-target=".bs-example-modal-lg" style="margin-right:0px;cursor:pointer;margin-top:5px;"><li>About</li></a>
-					</ul>
+<?php echo modules::run('home/cdTopLinkBar'); ?>
 
 
-				</div>
-				<div class="col-lg-8 col-md-9 hidden-xs col-sm-9">
-					<ul class="cdTopList cdTopList2">
-						<li>Connect with us  &nbsp;&nbsp;
-							<a href="https://www.facebook.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/facebook.png"  style="width:18px;" alt="" /></a>&nbsp;&nbsp;
-							<a href="https://twitter.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/twitter.png"  style="width:18px;" alt="" /></a>&nbsp;&nbsp;
-							<a href="http://instagram.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/instagram.png"  style="width:18px;" alt="" /></a>&nbsp;&nbsp;
-							<a href="http://www.youtube.com/" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/youtube.png"  style="width:38px;" alt="" /></a>&nbsp;&nbsp;
-						</li>
-						<li><img src="<?php echo BASEURL;?>public/images/socialMedia/gmail.png"  style="width:18px;" alt="" />&nbsp;&nbsp;Email : collegedrifters@gmail.com</li>											
-					</ul>
-				</div>
-			</div>
+<div class="container welcomeCont ">
+	<div class="row">
+		<div class="col-md-3">
+			<img src="<?php BASEURL;?>public/images/logo.png" style="width:100%;max-width:400px;" alt="" />
 		</div>
+		<div class="col-md-9"></div>
 	</div>
 
 
-<div class="container welcomeCont">
-	<div class="row">
+	 <nav class="navbar navbar-default homeNav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <div class="row">
 		<div class="col-md-12">
 			<h1 id="mainText" class="text-center"><img src="<?php BASEURL;?>public/images/logo.png" style="width:100%;max-width:400px;" alt="" /></h1>
 		</div>
@@ -55,53 +72,8 @@
 				}
 			?>
 		</div>
-	</div>
-	<div class="row" style="margin-top:20px;">
-		<div class="col-md-offset-3 col-md-6">
-		
-		  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators" style="bottom:-10px;">
-				   <?php $slider = modules::run('slider/get','slide_id')->result();
-				  $counter = 0;
-				  foreach ($slider as $slide) {
-				  	
-				  
-				  ?>
-				    <li data-target="#carousel-example-generic" data-slide-to="<?php echo $counter;?>" class="<?php if($counter==0){echo 'active';}?>"></li>
-				     <?php   $counter ++; } ?>
-				  </ol>
-				 
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-				  <?php $slider = modules::run('slider/get','slide_id')->result();
-				  $counter = 1;
-				  foreach ($slider as $slide) {
-				  	
-				  
-				  ?>
-				    <div class="item <?php if($counter==1){echo 'active';}?>">
-				  	<a href="<?php echo $slide->slide_url;?>" target="_blank">
-				      <img src="<?php echo BASEURL.$slide->slide_img;?>" alt="..." width="100%" style="height:auto;">
-				      <div class="carousel-caption">
-				          <h3 style="position:relative;top:40px;color:black;"><?php echo $slide->slide_caption;?></h3>
-				      </div>
-				    </a>
-				    </div>
-				    
-				    <?php   $counter ++; } ?>
-				  </div>
-				 
-				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left"></span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right"></span>
-				  </a>
-				</div> <!-- Carousel -->
-		</div>
-	</div>
+	</div> -->
+	
 </div>
 
 

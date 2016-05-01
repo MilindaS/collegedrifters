@@ -3,94 +3,14 @@ $exploded_url = explode('/',uri_string());
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<title>@collegedrifters</title>
-
-    <meta name="description" content="The Mission for College Drifters is to provide college students with a direct platform to buy and sell items to each other. By utilizing this marketplace students can inform others of events, notes, books, and tickets." />
-    <meta name="keywords" content="college, drifters, marketplace, collegedrifters, collegedrifters marketplace,online marketplace,buy,sell,events, items, notes, books, tickets" />
-    <meta name="viewport" content="width=device-width">
-	<?php
-		if(isset($meta_array) && !empty($meta_array)){
-			foreach($meta_array AS $item){
-					echo '<meta name="'.$item['name'].'" content="'.$item['content'].'" />';
-				}
-		}
-	?>
-	<?php
-		if(isset($meta_og_array) && !empty($meta_og_array)){
-			foreach($meta_og_array AS $item){
-					echo '<meta property="'.$item['property'].'" content="'.$item['content'].'" />';
-				}
-		}
-	?>
-    <link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/style.css">
-	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/pill.css">
-	<?php
-		if(isset($css_array) && !empty($css_array)){
-			foreach($css_array AS $item){
-					echo '<link rel="stylesheet" href="'.BASEURL.'public/css/'.$item.'" type="text/css" />'."\n";
-				}
-		}
-	?>
-
-	<script src="<?php	echo BASEURL;?>public/js/jquery-1.11.0.min.js"></script>
-	<script src="<?php	echo BASEURL;?>public/js/bootstrap.js"></script>
-	<script src="<?php	echo BASEURL;?>public/js/jquery.scrollUp.min.js"></script>
-	<?php
-	if(isset($js_array) && !empty($js_array))
-	{
-		foreach($js_array AS $item){
-				echo  '<script type="text/javascript"  src="'.BASEURL.'public/js/'.$item.'"  ></script>'."\n";
-		}
-	}
-	?>
-
-
-  </head>
+  <?php echo modules::run('home/metaHeader'); ?>
   </head>
   <body>
   <div class="container-full" >
 
 	<!--First row-->
-	<div class="cdTopLinkBarForMarket">
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-lg-4 col-md-3 col-sm-3 col-xs-8 ">
-					<ul class="cdTopList list-unstyled">
-						<a href="http://www.collegedrifters.com" id="collegeDriftHomeLink"><li>College<span style="color:#B4100A">Drifters</span></li></a>
-						<a data-toggle="modal" data-target=".bs-example-modal-lg" style="margin-right:0px;cursor:pointer;margin-top:5px;"><li>About</li></a>
-					</ul>
-
-
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs ">
-					<ul class="cdTopList cdTopList2">
-						<li>Connect with us  &nbsp;&nbsp;
-							<a href="https://www.facebook.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/facebook.png"  style="width:18px;" alt="" /></a>&nbsp;&nbsp;
-							<a href="https://twitter.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/twitter.png"  style="width:18px;" alt="" /></a>&nbsp;&nbsp;
-							<a href="http://instagram.com/collegedrifters" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/instagram.png"  style="width:18px;" alt="" /></a>&nbsp;&nbsp;
-							<a href="http://www.youtube.com/" target="_blank"><img src="<?php echo BASEURL;?>public/images/socialMedia/youtube.png"  style="width:38px;" alt="" /></a>&nbsp;&nbsp;
-						</li>
-						<li class="hidden-sm hidden-md"><img src="<?php echo BASEURL;?>public/images/socialMedia/gmail.png"  style="width:18px;" alt="" />&nbsp;&nbsp;Email : collegedrifters@gmail.com</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
-
-
-					<div class="pull-right"><a href="<?php echo BASEURL;?>login/loginView">Sign in</a>
-
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-
+	
+	<?php echo modules::run('home/cdTopLinkBarForMarket'); ?>
 
 
 
