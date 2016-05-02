@@ -2,16 +2,17 @@
 
 <?php echo modules::run('home/cdTopLinkBar'); ?>
 
-
-<div class="container welcomeCont ">
+<div class="container-fluid"  style="background:#EEE;">
+	<div class="container">
 	<div class="row">
 		<div class="col-md-3">
-			<img src="<?php BASEURL;?>public/images/logo.png" style="width:100%;max-width:400px;" alt="" />
+			<img src="<?php BASEURL;?>public/images/logo.png" style="width:100%;max-width:200px;padding:50px 0;" alt="" />
 		</div>
 		<div class="col-md-9"></div>
 	</div>
-
-
+</div>
+</div>
+<div class="container welcomeCont ">
 	 <nav class="navbar navbar-default homeNav">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -75,7 +76,6 @@
 	</div> -->
 	
 </div>
-
 
 
 
