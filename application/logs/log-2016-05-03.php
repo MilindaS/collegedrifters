@@ -1625,3 +1625,344 @@ DEBUG - 2016-05-03 12:11:37 --> File loaded: application/modules/home/views/home
 DEBUG - 2016-05-03 12:11:37 --> File loaded: application/modules/home/views/footer.php
 DEBUG - 2016-05-03 12:11:37 --> Final output sent to browser
 DEBUG - 2016-05-03 12:11:37 --> Total execution time: 0.0800
+DEBUG - 2016-05-03 12:20:53 --> Config Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:20:53 --> URI Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Router Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:20:53 --> Output Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Security Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Input Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:20:53 --> Language Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Language Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Config Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:20:53 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Session Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:20:53 --> Session routines successfully run
+DEBUG - 2016-05-03 12:20:53 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:20:53 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:20:53 --> Model Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:20:53 --> Model Class Initialized
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:20:53 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:20:53 --> Final output sent to browser
+DEBUG - 2016-05-03 12:20:53 --> Total execution time: 0.0373
+DEBUG - 2016-05-03 12:21:08 --> Config Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:21:08 --> URI Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Router Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:21:08 --> Output Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Security Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Input Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:21:08 --> Language Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Language Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Config Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:21:08 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Session Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:21:08 --> Session routines successfully run
+DEBUG - 2016-05-03 12:21:08 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:21:08 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:21:08 --> Model Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:21:08 --> Model Class Initialized
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:21:08 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:21:08 --> Final output sent to browser
+DEBUG - 2016-05-03 12:21:08 --> Total execution time: 0.0352
+DEBUG - 2016-05-03 12:21:29 --> Config Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:21:29 --> URI Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Router Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:21:29 --> Output Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Security Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Input Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:21:29 --> Language Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Language Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Config Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:21:29 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Session Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:21:29 --> Session routines successfully run
+DEBUG - 2016-05-03 12:21:29 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:21:29 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:21:29 --> Model Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:21:29 --> Model Class Initialized
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:21:29 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:21:29 --> Final output sent to browser
+DEBUG - 2016-05-03 12:21:29 --> Total execution time: 0.0381
+DEBUG - 2016-05-03 12:21:50 --> Config Class Initialized
+DEBUG - 2016-05-03 12:21:50 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:21:50 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:21:50 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:21:50 --> URI Class Initialized
+DEBUG - 2016-05-03 12:21:50 --> Router Class Initialized
+DEBUG - 2016-05-03 12:21:50 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:21:50 --> Output Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Security Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Input Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:21:51 --> Language Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Language Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Config Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:21:51 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Session Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:21:51 --> Session routines successfully run
+DEBUG - 2016-05-03 12:21:51 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:21:51 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:21:51 --> Model Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:21:51 --> Model Class Initialized
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:21:51 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:21:51 --> Final output sent to browser
+DEBUG - 2016-05-03 12:21:51 --> Total execution time: 0.0373
+DEBUG - 2016-05-03 12:22:26 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:22:26 --> URI Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Router Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:22:26 --> Output Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Security Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Input Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:22:26 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:22:26 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Session Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:22:26 --> Session routines successfully run
+DEBUG - 2016-05-03 12:22:26 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:22:26 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:26 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:22:26 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:22:26 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:22:26 --> Final output sent to browser
+DEBUG - 2016-05-03 12:22:26 --> Total execution time: 0.0393
+DEBUG - 2016-05-03 12:22:41 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:22:41 --> URI Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Router Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:22:41 --> Output Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Security Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Input Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:22:41 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:22:41 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Session Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:22:41 --> Session routines successfully run
+DEBUG - 2016-05-03 12:22:41 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:22:41 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:41 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:22:41 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:22:41 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:22:41 --> Final output sent to browser
+DEBUG - 2016-05-03 12:22:41 --> Total execution time: 0.0335
+DEBUG - 2016-05-03 12:22:58 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:22:58 --> URI Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Router Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:22:58 --> Output Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Security Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Input Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:22:58 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:22:58 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Session Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:22:58 --> Session routines successfully run
+DEBUG - 2016-05-03 12:22:58 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:58 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:22:58 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:58 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:58 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:22:58 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:22:59 --> Final output sent to browser
+DEBUG - 2016-05-03 12:22:59 --> Total execution time: 0.0647
+DEBUG - 2016-05-03 12:22:59 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:22:59 --> URI Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Router Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:22:59 --> Output Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Security Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Input Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:22:59 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Language Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Config Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:22:59 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Session Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:22:59 --> Session routines successfully run
+DEBUG - 2016-05-03 12:22:59 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:22:59 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:22:59 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:22:59 --> Model Class Initialized
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:22:59 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:22:59 --> Final output sent to browser
+DEBUG - 2016-05-03 12:22:59 --> Total execution time: 0.0375
+DEBUG - 2016-05-03 12:23:09 --> Config Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Hooks Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 12:23:09 --> URI Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Router Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 12:23:09 --> Output Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Security Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Input Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 12:23:09 --> Language Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Language Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Config Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Loader Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 12:23:09 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Session Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 12:23:09 --> Session routines successfully run
+DEBUG - 2016-05-03 12:23:09 --> Controller Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 12:23:09 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 12:23:09 --> Model Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 12:23:09 --> Model Class Initialized
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 12:23:09 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 12:23:09 --> Final output sent to browser
+DEBUG - 2016-05-03 12:23:09 --> Total execution time: 0.0383
+DEBUG - 2016-05-03 14:35:37 --> Config Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Hooks Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Utf8 Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> UTF-8 Support Enabled
+DEBUG - 2016-05-03 14:35:37 --> URI Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Router Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> No URI present. Default controller set.
+DEBUG - 2016-05-03 14:35:37 --> Output Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Security Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Input Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-05-03 14:35:37 --> Language Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Language Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Config Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Loader Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Helper loaded: url_helper
+DEBUG - 2016-05-03 14:35:37 --> Database Driver Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Session Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Helper loaded: string_helper
+DEBUG - 2016-05-03 14:35:37 --> A session cookie was not found.
+DEBUG - 2016-05-03 14:35:37 --> Session routines successfully run
+DEBUG - 2016-05-03 14:35:37 --> Controller Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> Home MX_Controller Initialized
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/controllers/../modules/tracking/controllers/tracking.php
+DEBUG - 2016-05-03 14:35:37 --> Tracking MX_Controller Initialized
+DEBUG - 2016-05-03 14:35:37 --> Model Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/modules/tracking/models/mdl_tracking.php
+DEBUG - 2016-05-03 14:35:37 --> Model Class Initialized
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/modules/home/views/metaHeader.php
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/modules/home/views/header.php
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/modules/home/views/cdTopLinkBar.php
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2016-05-03 14:35:37 --> File loaded: application/modules/home/views/footer.php
+DEBUG - 2016-05-03 14:35:37 --> Final output sent to browser
+DEBUG - 2016-05-03 14:35:37 --> Total execution time: 0.0325

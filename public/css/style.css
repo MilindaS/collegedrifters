@@ -62,7 +62,9 @@ a:active{
 	background:black;color:#aeaeae;font-size:11px;padding:5px 0px;
 }
 .welcomeCont{
+	margin-top: 20px;
 	background:none;
+
 }
 .cdTopLinkBar{
 	/*margin-top: 5px;*/
@@ -147,7 +149,7 @@ a:active{
 	font-size:40px;
 	color:#E5F0FB;
 	font-family:'Cambria';
-	margin:10px 0px;
+	margin:0px 0px;
 	margin-left:20px;
 }
 .navbar-collapse {
@@ -157,7 +159,7 @@ a:active{
 .homeNav{
 	background:none;
 	border:none;
-	margin-bottom:15px;
+	
 }
 .navbar-default .navbar-nav > li > a {
 	color: #444444;
@@ -166,7 +168,7 @@ a:active{
     font-weight: bold;
     font-size: 16px;
     border-radius: 4px;
-    margin: 4px;
+    margin: 0px;
     padding: 8px 12px;
 }
 
@@ -955,4 +957,9 @@ cursor: default;
 
 .list-group-item:first-child ,.list-group-item:last-child {
 	border-radius: 0px;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    background-color: #1B1B1B;
+    border-color: #1B1B1B;
 }

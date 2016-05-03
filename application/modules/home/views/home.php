@@ -4,16 +4,13 @@
 
 <div class="container-fluid"  style="background:#F0F0F0;">
 	<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<img src="<?php BASEURL;?>public/images/logo.png" style="width:100%;max-width:200px;padding:50px 0;" alt="" />
+		<div class="row">
+			<div class="col-md-3">
+				<img src="<?php BASEURL;?>public/images/logo.png" style="width:100%;max-width:200px;padding-top:50px;" alt="" />
+			</div>
+			<div class="col-md-9"></div>
 		</div>
-		<div class="col-md-9"></div>
-	</div>
-</div>
-</div>
-<div class="container welcomeCont ">
-	 <nav class="navbar navbar-default homeNav	">
+		<nav class="navbar navbar-default homeNav">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -34,6 +31,11 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
+	</div>
+
+</div>
+<div class="container welcomeCont ">
+	 
 
 
 
