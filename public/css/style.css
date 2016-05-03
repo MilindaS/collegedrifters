@@ -62,7 +62,6 @@ a:active{
 	background:black;color:#aeaeae;font-size:11px;padding:5px 0px;
 }
 .welcomeCont{
-	margin-top:2%;
 	background:none;
 }
 .cdTopLinkBar{
@@ -158,7 +157,7 @@ a:active{
 .homeNav{
 	background:none;
 	border:none;
-	margin:0px;
+	margin-bottom:15px;
 }
 .navbar-default .navbar-nav > li > a {
 	color: #444444;
@@ -942,4 +941,18 @@ cursor: default;
 
 .featured-product-a:hover{
 	opacity: 0.8;
+}
+
+.carousel-control.left,.carousel-control.right  {
+	    background-image: none !important;
+}
+
+.list-group-item {
+	background-color: #f8f8f8;
+	border-left:none;
+	border-right:none;
+}
+
+.list-group-item:first-child ,.list-group-item:last-child {
+	border-radius: 0px;
 }
