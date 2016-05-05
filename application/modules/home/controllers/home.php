@@ -4,6 +4,8 @@ class Home extends MX_Controller {
 
 	public function index()
 	{
+		$this->load->module('item');
+		$data['featured_item_list'] = $this->item->_custom_query("SELECT * from tb_items WHERE item_type=2 ORDER BY item_id DESC LIMIT 0,4 ")->result();
 		$meta_og_array = array(
 	 		array('property'=>"og:title",'content'=>'@collegedrifters'),
 	 		array('property'=>"og:url",'content'=>BASEURL),
@@ -12,7 +14,7 @@ class Home extends MX_Controller {
 	 		array('property'=>"og:image",'content'=>BASEURL.'public/images/logo.png'),
 	 		);
 		$this->header('','','',$meta_og_array);
-		$this->load->view('home');
+		$this->load->view('home',$data);
 		$this->footer();
 	}
 

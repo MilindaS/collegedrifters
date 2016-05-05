@@ -90,6 +90,85 @@
 					</div>
 				</div>
 			</div>	
+			<div class="row"><br></div>
+			<div class="row">
+				<div class="col-md-12">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Featured Products</div>
+					  <div class="panel-body">
+					    <div class="slideshow">
+<?php
+	foreach($featured_item_list as $item){
+		// print_r($item);
+	$category = modules::run('category/get_where',$item->item_category)->result_array();
+?>
+		<div style="border:1px solid #DDD;margin:5px;padding:8px;">
+			<div class="row" style="min-height:150px;">
+				<div class="col-md-12">
+					<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="140px;height:180px;"  />	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<span style="font-size:16px;"><?php echo $item->item_name; ?></span>
+				</div>
+			</div>
+			<div class="row" style="height:50px;">
+				<div class="col-md-12">
+					<span style="font-size:12px;"><?php echo $item->item_description; ?></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="font-size:11px;">
+					Tags: &nbsp;<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+				</div>
+			</div>
+		</div>
+		
+<?php } ?>
+<?php
+	foreach($featured_item_list as $item){
+		// print_r($item);
+	$category = modules::run('category/get_where',$item->item_category)->result_array();
+?>
+		<div style="border:1px solid #DDD;margin:5px;padding:8px;">
+			<div class="row" style="min-height:150px;">
+				<div class="col-md-12">
+					<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="140px;height:180px;"  />	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<span style="font-size:16px;"><?php echo $item->item_name; ?></span>
+				</div>
+			</div>
+			<div class="row" style="height:50px;">
+				<div class="col-md-12">
+					<span style="font-size:12px;"><?php echo $item->item_description; ?></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="font-size:11px;">
+					Tags: &nbsp;<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+				</div>
+			</div>
+		</div>
+		
+<?php } ?>
+
+					       
+					        <!--<div><img src="http://lorempixel.com/400/200/nature/IMAGE-04/"></div>
+					        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-05/"></div>
+					        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-06/"></div>
+					        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-07/"></div>
+					        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-08/"></div>
+					        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-09/"></div>
+					        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-10/"></div> -->
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -162,3 +241,33 @@
 	//echo count(modules::run('tracking/allHits'));
 
 ?>
+
+<script>
+$(document).ready(function(){
+  	$(".slideshow").slick({
+	    centerMode: true,
+	  	centerPadding: '60px',
+	  	slidesToShow: 3,
+	  	responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 3
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+	});
+});
+</script>

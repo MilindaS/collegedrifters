@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/style.css">
 	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/css/pill.css">
+	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/vendor/slick/slick.css">
+	<link rel="stylesheet" href="<?php	echo BASEURL;?>public/vendor/slick/slick-theme.css">
 
 	<?php
 
@@ -41,6 +43,7 @@
 	<script src="<?php	echo BASEURL;?>public/js/jquery.scrollUp.min.js"></script>
 	<script src="<?php	echo BASEURL;?>public/vendor/ckeditor/ckeditor.js"></script>
 	<script src="<?php	echo BASEURL;?>public/vendor/ckeditor/adapters/jquery.js"></script>
+	<script src="<?php	echo BASEURL;?>public/vendor/slick/slick.min.js"></script>
 	<?php
 
 	if(isset($js_array) && !empty($js_array))

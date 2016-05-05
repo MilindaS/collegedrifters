@@ -442,11 +442,10 @@ color:#29ABA4;font-size:20px;font-weight:bold;
 	cursor: pointer;
 }
 .featured-category{
-	position: absolute;
-	bottom:10px;
-	left: 10px;
+	
 	opacity: 1;
 	cursor: pointer;
+	z-index: 999;
 }
 
 
@@ -962,4 +961,34 @@ cursor: default;
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
     background-color: #1B1B1B;
     border-color: #1B1B1B;
+}
+.slick-prev:before, .slick-next:before  {
+    color: gray ! important;
+}
+.slick-slide {
+  	height:300px !important;
+}
+.panel-default>.panel-heading {
+	background-color: #1B1B1B;
+	color:#DDD;
+	font-size: 14px;
+	font-family: 'Ubuntu';
+}
+.slick-list .draggable{
+	max-height: 200px;
+}
+.panel-body {
+	padding-bottom: 0px;
+	font-family: 'Ubuntu';
+}
+
+
+@font-face{
+  font-family: Droid_Sans;
+  src: url('../fonts/Droid_Sans/DroidSans.ttf');
+}
+
+@font-face{
+  font-family: Ubuntu;
+  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
 }
