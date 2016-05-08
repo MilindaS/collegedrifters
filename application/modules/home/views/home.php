@@ -169,6 +169,43 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Latest Products</div>
+					  <div class="panel-body">
+						<?php
+							foreach($featured_item_list as $item){
+							$category = modules::run('category/get_where',$item->item_category)->result_array();
+						?>
+								<div style="border:1px solid #DDD;margin:5px;padding:8px;">
+									<div class="row" style="min-height:150px;">
+										<div class="col-md-12">
+											<img src="<?php if($item->item_image!=null){echo BASEURL.$item->item_image;}else{echo BASEURL."public/images/icon-no-image.png";}?>" alt="" width="140px;height:180px;"  />	
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<span style="font-size:16px;"><?php echo $item->item_name; ?></span>
+										</div>
+									</div>
+									<div class="row" style="height:50px;">
+										<div class="col-md-12">
+											<span style="font-size:12px;"><?php echo $item->item_description; ?></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12" style="font-size:11px;">
+											Tags: &nbsp;<span class="label label-primary featured-category"><?php echo $category[0]['category_name'];?></span>
+										</div>
+									</div>
+								</div>
+								
+						<?php } ?>
+					  </div>
+					</div>
+			</div>
+			</div>
 		</div>
 	</div>
 	
